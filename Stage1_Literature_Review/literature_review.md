@@ -32,7 +32,7 @@ LinkedIn/Twitter link:
  style='width:469.5pt;height:396pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="file:///C:/Users/Yanny/AppData/Local/Packages/oice_16_974fa576_32c1d314_122a/AC/Temp/msohtmlclip1/01/clip_image001.png"
   o:title=""/>
-</v:shape><![endif]--><!--[if !vml]-->![](file:///C:/Users/Yanny/AppData/Local/Packages/oice_16_974fa576_32c1d314_122a/AC/Temp/msohtmlclip1/01/clip_image002.gif)<!--[endif]-->
+</v:shape><![endif]--><!--[if !vml]-->![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage1_Literature_Review/images/First.png)<!--[endif]-->
 
  
 
@@ -125,7 +125,7 @@ We obtained transcriptome and clinical data from the TCGA Data Portal (<https://
  <w:borderleft type="single" width="2"/>
  <w:borderbottom type="single" width="2"/>
  <w:borderright type="single" width="2"/>
-</v:shape><![endif]--><!--[if !vml]-->![](file:///C:/Users/Yanny/AppData/Local/Packages/oice_16_974fa576_32c1d314_122a/AC/Temp/msohtmlclip1/01/clip_image004.gif)<!--[endif]-->**
+</v:shape><![endif]--><!--[if !vml]-->![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage1_Literature_Review/images/second.png)<!--[endif]-->**
 
 **Differential Expression Analysis**
 
@@ -173,7 +173,7 @@ Seven cross-cancer gene signatures were consistently altered across cancers. A 1
  height:2in;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="file:///C:/Users/Yanny/AppData/Local/Packages/oice_16_974fa576_32c1d314_122a/AC/Temp/msohtmlclip1/01/clip_image005.png"
   o:title=""/>
-</v:shape><![endif]--><!--[if !vml]-->![](file:///C:/Users/Yanny/AppData/Local/Packages/oice_16_974fa576_32c1d314_122a/AC/Temp/msohtmlclip1/01/clip_image006.gif)<!--[endif]-->
+</v:shape><![endif]--><!--[if !vml]-->![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage1_Literature_Review/images/thirdd.png)<!--[endif]-->
 
 
 # <a id="_loe4335jqamv"></a>**Discussion**
