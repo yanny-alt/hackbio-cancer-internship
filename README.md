@@ -14,11 +14,17 @@ In this stage, I developed essential technical writing skills, focusing on clear
   - **[essay.md](./Stage0_Technical_Writing/essay.md)**: Essay on Supervised Learning in Cancer Research.
   - **images/**: Directory containing images used in the essay.
 
+### Stage 1: Literature Review
+This stage involves conducting a comprehensive literature review on bioinformatics research, specifically focusing on RNA-Seq transcriptome analysis of cancer data.
+
+- **[Stage 1 Folder](./Stage1_Literature_Review/)**
+  - **[README.md](./Stage1_Literature_Review/README.md)**: Overview of the literature review stage.
+  - **[literature_review.md](./Stage1_Literature_Review/literature_review.md)**: Detailed literature review document.
+  - **references/**: Directory containing references and citations used in the literature review.
+  - **[Presentation Video](https://your-video-link-here)**: Summary of the literature review findings.
+
 ### Upcoming Stages
 The repository will be updated with subsequent stages of the internship as they are completed. Below is a brief overview of what to expect:
-
-- **Stage 1: Literature Review**
-  - A comprehensive literature review of bioinformatics research, identifying gaps and formulating research questions.
 
 - **Stage 2: Coding and Visualization**
   - Application of coding skills to analyze biological data and create meaningful visualizations.
@@ -35,7 +41,7 @@ The repository will be updated with subsequent stages of the internship as they 
 ## How to Navigate This Repository
 
 - **Stages**: Each stage of the internship has its own directory containing all relevant files, including essays, code, and images.
-- **README Files**: Each stage directory contains a `README.md` that provides an overview and instructions specific to that stage.
+- **README Files**: Each stage directory contains a README.md that provides an overview and instructions specific to that stage.
 - **Code and Data**: If applicable, code and datasets used in the stages will be stored in their respective directories.
 
 ## Author
