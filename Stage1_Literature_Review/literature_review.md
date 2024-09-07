@@ -6,7 +6,7 @@ LinkedIn/Twitter link:
 
 **_Study Overview_**
 
-[](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage1_Literature_Review/images/First.png)
+![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage1_Literature_Review/images/First.png)
 
  
 
