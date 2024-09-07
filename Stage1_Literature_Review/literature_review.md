@@ -6,33 +6,7 @@ LinkedIn/Twitter link:
 
 **_Study Overview_**
 
-** **
-
-<!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
- o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
- stroked="f">
- <v:stroke joinstyle="miter"/>
- <v:formulas>
-  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
-  <v:f eqn="sum @0 1 0"/>
-  <v:f eqn="sum 0 0 @1"/>
-  <v:f eqn="prod @2 1 2"/>
-  <v:f eqn="prod @3 21600 pixelWidth"/>
-  <v:f eqn="prod @3 21600 pixelHeight"/>
-  <v:f eqn="sum @0 0 1"/>
-  <v:f eqn="prod @6 1 2"/>
-  <v:f eqn="prod @7 21600 pixelWidth"/>
-  <v:f eqn="sum @8 21600 0"/>
-  <v:f eqn="prod @7 21600 pixelHeight"/>
-  <v:f eqn="sum @10 21600 0"/>
- </v:formulas>
- <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
- <o:lock v:ext="edit" aspectratio="t"/>
-</v:shapetype><v:shape id="Picture_x0020_1" o:spid="_x0000_i1027" type="#_x0000_t75"
- style='width:469.5pt;height:396pt;visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="file:///C:/Users/Yanny/AppData/Local/Packages/oice_16_974fa576_32c1d314_122a/AC/Temp/msohtmlclip1/01/clip_image001.png"
-  o:title=""/>
-</v:shape><![endif]--><!--[if !vml]-->![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage1_Literature_Review/images/First.png)<!--[endif]-->
+[](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage1_Literature_Review/images/First.png)
 
  
 
@@ -115,17 +89,7 @@ mso-highlight:white'><span style='mso-element:field-end'></span></span><![endif]
 
 We obtained transcriptome and clinical data from the TCGA Data Portal (<https://tcga-data.nci.nih.gov/tcga/tcgaHome2.jsp>), focusing on UNC (IlluminaHiSeq\_RNASeqV2) to avoid sequencing platform variability. Twelve cancer types with both cancerous and normal tissue data were selected using "primary tumor" and "solid tissue normal" samples (Table 4).
 
-**<!--[if gte vml 1]><v:shape id="Picture_x0020_2" o:spid="_x0000_i1026"
- type="#_x0000_t75" style='width:486pt;height:324pt;visibility:visible;
- mso-wrap-style:square' o:bordertopcolor="yellow pure" o:borderleftcolor="yellow pure"
- o:borderbottomcolor="yellow pure" o:borderrightcolor="yellow pure">
- <v:imagedata src="file:///C:/Users/Yanny/AppData/Local/Packages/oice_16_974fa576_32c1d314_122a/AC/Temp/msohtmlclip1/01/clip_image003.png"
-  o:title="" croptop="220f" cropleft="145f" cropright="211f"/>
- <w:bordertop type="single" width="2"/>
- <w:borderleft type="single" width="2"/>
- <w:borderbottom type="single" width="2"/>
- <w:borderright type="single" width="2"/>
-</v:shape><![endif]--><!--[if !vml]-->![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage1_Literature_Review/images/second.png)<!--[endif]-->**
+![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage1_Literature_Review/images/second.png)
 
 **Differential Expression Analysis**
 
@@ -168,12 +132,7 @@ To explore biological relevance, we conducted pathway enrichment and disease ass
 
 Seven cross-cancer gene signatures were consistently altered across cancers. A 14-gene signature showed high predictive accuracy, with rates ranging from 88.17% to 99.10% across seven cancer types. A lung cancer-specific signature achieved 95.68% accuracy in TCGA data and 100% in GSE5364 data.
 
-<!--[if gte vml 1]><v:shape
- id="Picture_x0020_4" o:spid="_x0000_i1025" type="#_x0000_t75" style='width:249.75pt;
- height:2in;visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="file:///C:/Users/Yanny/AppData/Local/Packages/oice_16_974fa576_32c1d314_122a/AC/Temp/msohtmlclip1/01/clip_image005.png"
-  o:title=""/>
-</v:shape><![endif]--><!--[if !vml]-->![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage1_Literature_Review/images/thirdd.png)<!--[endif]-->
+![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage1_Literature_Review/images/thirdd.png)
 
 
 # <a id="_loe4335jqamv"></a>**Discussion**
