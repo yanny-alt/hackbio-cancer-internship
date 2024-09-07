@@ -2,7 +2,7 @@
 
 Muhammad Faheem Raziq, Favour Igwezeke, Josiah Isong, Nnadiekwe Chigozie
 
-LinkedIn/Twitter link:
+LinkedIn/Twitter link: https://www.linkedin.com/posts/favourokechukwu_literature-review-presentation-large-scale-activity-7238192904085655552-SZIq?utm_source=share&utm_medium=member_android
 
 **_Study Overview_**
 
