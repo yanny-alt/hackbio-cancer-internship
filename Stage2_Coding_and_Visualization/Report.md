@@ -19,13 +19,20 @@ Favour Igwezeke<sup>1</sup>, Jessica Ovabor<sup>2</sup>, Anarghya Hegde<sup>3</s
 | 5 | nwaigweogochukwu756@gmail.com | [Slack ID](https://hackbiointern-leo4437.slack.com/team/U07KP1D2F24) |
 | 6 | faheemraziq1999@gmail.com | [Slack ID](https://hackbiointern-leo4437.slack.com/team/U07KUECLR40) |
 
-## 1. Overview
+## 1. Abstract
 
-In this analysis, a gene expression dataset was processed, visualized, and interpreted to gain insights into the biological importance of differential expression. To investigate the pathways associated with gene expression under specific conditions, heatmaps were generated, clustering was performed, and functional enrichment analysis was conducted. This analysis was completed by a team of 3 data scientists and 3 biomarker hunters.
+The biological pathways that are enriched in a dataset of underregulated genes are 
+presented in detail in this study. Important biological pathways using Gene Ontology 
+(GO) enrichment analysis were found, including regulation of biosynthetic activities 
+and transcription regulation by RNA polymerase II. Understanding the regulatory 
+mechanisms of gene expression and their effects on metabolism, development, and 
+cellular differentiation depends on these pathways. This study sheds light on the 
+biological relevance of these pathways by revealing the number of genes involved in 
+each process and the fold enrichment values. Relevant literature in the domain of 
+bioinformatics and molecular biology supports this study’s conclusion (Ashburner et 
+al., 2000; The Gene Ontology Consortium, 2021).
 
 Dataset utilized for the study: **Glioblastoma gene expression dataset**
-
-The top 500+ differentially expressed genes are included in this dataset, and the goal of the study was to visualize the data, find significant gene clusters, and employ enrichment analysis to determine the biological significance of these genes.
 
 ## 2. Data Preprocessing
 
@@ -131,3 +138,8 @@ To convey the importance of these pathways, a bubble plot was constructed. Each 
 ## 9. Conclusion
 
 The enrichment analysis conducted in this study reveals the critical roles of biological processes such as transcriptional regulation and biosynthesis in the dataset of the underregulated genes. The identified pathways are heavily involved in maintaining cellular homeostasis, development, and metabolism. Their dysregulation may have broad effects in domains like metabolic diseases and neurobiology. FOXP2, HIF3A, and GBX2 are among the genes found in these pathways that are critical for functions ranging from transcription to neurogenesis. When it comes to developmental disorders and metabolic dysfunctions, more research into the functional implications of these pathways may yield important insights into disease mechanisms and causes.
+
+## 10. References
+
+1. Ashburner, M., Ball, C. A., Blake, J. A., et al. (2000). Gene ontology: Tool for 
+   the unification of biology. *Nature Genetics*, 25(1), 25-29. DOI: [10.1038/75556](https://doi.org/10.1038/75556)
