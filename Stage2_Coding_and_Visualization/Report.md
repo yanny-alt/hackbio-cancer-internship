@@ -80,8 +80,8 @@ Three different clustering strategies were explored to investigate gene expressi
 
 To get the p-values and fold changes, DESeq was performed, and then subsets of genes were identified based on significant upregulation and downregulation using team-decided fold change and p-value cutoffs; a significance threshold of 0.05 was chosen. To get the fold change, the following formulas were used: 
 
-**Formulars:** Fold change : 
-- Expression level in final condition / Expression level in Initial Condition
+**Formulars:**  
+- Fold change :  Expression level in final condition / Expression level in Initial Condition
 - Log2 fold change : log2(final/initial)
 
 - **Upregulated genes:** log2Foldchange > 1 and P value < 0.05
@@ -114,7 +114,7 @@ Here, a detailed description of the top 3 enriched pathways according to biologi
 - **Total Pathway Genes:** 2747
 - **Fold Enrichment:** 2.34
 
-One essential biological process that governs the transcription of DNA into messenger RNA (mRNA) is Transcription Regulation by RNA polymerase II. The transcription of genes that code for proteins is carried out by RNA polymerase II, whose regulation is necessary for cell development, differentiation, and responsiveness to external stimuli. The over-representation of this pathway in the dataset implies that transcriptional regulation is a major contributor to the observed gene under-regulation.
+One essential biological process that governs the transcription of DNA into messenger RNA (mRNA) is Transcription Regulation by RNA polymerase II. The transcription of genes that code for proteins is carried out by RNA polymerase II, whose regulation is necessary for cell development, differentiation, and responsiveness to external stimuli. The over-representation of this pathway in the dataset implies that transcriptional regulation is a major contributor to the observed gene under-regulation. (Linzer N et al.,  (2021) . Front. Mol. Biosci. 8:681550.)
 
 ### 7.2 Transcription by RNA Polymerase II (GO:0006366)
 
@@ -152,4 +152,6 @@ Our investigation’s findings have demonstrated the biological significance of 
 4. Wickham, H., François, R., Henry, L., Müller, K., & Vaughan, D. (2023). dplyr: A grammar of data manipulation. R package version 1.1.2. Computer software.
 5. Ge, S. X., Jung, D., & Yao, R. (2020). ShinyGO: A graphical gene-set enrichment tool for animals and plants. *Bioinformatics*, 36(8), 2628-2629. DOI: [10.1093/bioinformatics/btz931](https://doi.org/10.1093/bioinformatics/btz931)
 6. Love, M. I., Huber, W., & Anders, S. (2014). Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. *Genome Biology*, 15, 1-21. DOI: [10.1186/s13059-014-0550-8](https://doi.org/10.1186/s13059-014-0550-8)
-7. Acker, J., Conaway, R. C., & Conaway, J. W. (2013). The RNA polymerase II machinery: Insights into structure, function, and regulation. Nature Reviews Molecular Cell Biology, 14(5), 283-295. DOI: 10.1038/nrm3554
+7. Acker, J., Conaway, R. C., & Conaway, J. W. (2013). The RNA polymerase II machinery: Insights into structure, function, and regulation. *Nature Reviews Molecular Cell Biology*, 14(5), 283-295. DOI: [10.1038/nrm3554](https://doi.org/10.1038/nrm3554)
+8. Linzer, N., Trumbull, A., Nar, R., Gibbons, M. D., Yu, D. T., Strouboulis, J., & Bungert, J. (2021). Regulation of RNA Polymerase II Transcription Initiation and Elongation by Transcription Factor TFII-I. *Frontiers in Molecular Biosciences*, 8:681550. DOI: [10.3389/fmolb.2021.681550](https://doi.org/10.3389/fmolb.2021.681550)
+
