@@ -80,8 +80,8 @@ Three different clustering strategies were explored to investigate gene expressi
 
 To get the p-values and fold changes, DESeq was performed, and then subsets of genes were identified based on significant upregulation and downregulation using team-decided fold change and p-value cutoffs; a significance threshold of 0.05 was chosen. To get the fold change, the following formulas were used: 
 
-**Formulars:**
-- Fold change : Expression level in final condition / Expression level in Initial Condition
+**Formulars:** Fold change : 
+- Expression level in final condition / Expression level in Initial Condition
 - Log2 fold change : log2(final/initial)
 
 - **Upregulated genes:** log2Foldchange > 1 and P value < 0.05
@@ -89,7 +89,7 @@ To get the p-values and fold changes, DESeq was performed, and then subsets of g
 
 ## 6. Functional Enrichment Analysis
 
-Functional enrichment analysis was performed using ShinyGO to determine which pathways are overrepresented in the gene expression dataset. The analysis helped identify biological processes associated with significantly downregulated genes, but there were no biological processes that were significantly enriched with the genes in the upregulated set.
+Functional enrichment analysis was performed using ShinyGO to determine which pathways are overrepresented in the gene expression dataset. The analysis helped identify biological processes associated with significantly downregulated genes, but there were no biological processes that were significantly enriched with the genes in the upregulated set. (Ge et al., 2020)
 
 ### 6.1 Enrichment Results
 
@@ -132,7 +132,7 @@ The expression of genes and cellular function depend on the Transcription proces
 - **Total Pathway Genes:** 4545
 - **Fold Enrichment:** 2.08
 
-In simpler terms, the process by which cells generate complex chemicals from simpler ones is known as Biosynthesis and it is essential to both metabolism and cellular growth. The regulation of biosynthetic pathways is essential for cellular growth, cellular energy-balance maintenance, and for its responsive function towards external stimuli. The pathway’s enrichment in this dataset implies that under-regulating genes related to biosynthetic activities may have important metabolic repercussions.(Mukherjee, A et al., 2014; Journal of Biological Chemistry 289(10), 6569-6579.)
+In simpler terms, the process by which cells generate complex chemicals from simpler ones is known as Biosynthesis and it is essential to both metabolism and cellular growth. The regulation of biosynthetic pathways is essential for cellular growth, cellular energy-balance maintenance, and for its responsive function towards external stimuli. The pathway’s enrichment in this dataset implies that under-regulating genes related to biosynthetic activities may have important metabolic repercussions. (Mukherjee, A et al., 2014; Journal of Biological Chemistry 289(10), 6569-6579.)
 
 ## 8. Visualization of Enrichment Results
 
@@ -142,7 +142,7 @@ To convey the importance of these pathways, a bubble plot was constructed. Each 
 
 ## 9. Conclusion
 
-The enrichment analysis conducted in this study reveals the critical roles of biological processes such as transcriptional regulation and biosynthesis in the dataset of the underregulated genes. The identified pathways are heavily involved in maintaining cellular homeostasis, development, and metabolism. Their dysregulation may have broad effects in domains like metabolic diseases and neurobiology. FOXP2, HIF3A, and GBX2 are among the genes found in these pathways that are critical for functions ranging from transcription to neurogenesis. When it comes to developmental disorders and metabolic dysfunctions, more research into the functional implications of these pathways may yield important insights into disease mechanisms and causes.
+Our investigation’s findings have demonstrated the biological significance of several enriched pathways in a dataset of underregulated genes. Our understanding of the control of gene expression, biosynthesis, and cellular differentiation is improved by focusing on biological pathways like the regulation of biosynthetic activities and transcription regulation by RNA polymerase II (Ashburner et al., 2000). These pathways are crucial to regulating metabolism, development, and cellular differentiation, as demonstrated by their high fold enrichment values and the number of genes involved. These findings advance our understanding of the molecular processes driving gene under-regulation and might lead to novel approaches to addressing biological issues.
 
 ## 10. References
 
