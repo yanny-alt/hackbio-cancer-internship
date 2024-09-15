@@ -78,14 +78,14 @@ Three different clustering strategies were explored to investigate gene expressi
 
 ## 5. Subsetting Genes Based on Expression
 
-To get the p-values and fold changes, DESeq was performed, and then subsets of genes were identified based on significant upregulation and downregulation using team-decided fold change and p-value cutoffs; a significance threshold of 0.05 was chosen. To get the fold change, the following formulas were used: 
+To get the adjusted p-values and fold changes, DESeq was performed, and then subsets of genes were identified based on significant upregulation and downregulation using team-decided fold change and adjusted p-value cutoffs; a significance threshold of 0.05 was chosen. To get the fold change, the following formulas were used: 
 
 **Formulars:**  
 - Fold change :  Expression level in final condition / Expression level in Initial Condition
 - Log2 fold change : log2(final/initial)
 
-- **Upregulated genes:** log2Foldchange > 1 and P value < 0.05
-- **Downregulated genes:** log2Foldchange < -1 and P value < 0.05
+- **Upregulated genes:** log2Foldchange > 1 and Adjusted P value < 0.05
+- **Downregulated genes:** log2Foldchange < -1 and Adjusted P value < 0.05
 
 ## 6. Functional Enrichment Analysis
 
