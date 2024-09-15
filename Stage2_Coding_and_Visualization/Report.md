@@ -1,6 +1,6 @@
 # Stage 02 Task
 
-## HackBio Internship: Cancers
+## HackBio BioInformatics Internship: Clinical Oncology
 
 ### Title
 **Gene Expression Analysis and Functional Enrichment of Differentially Expressed Genes**
@@ -43,11 +43,11 @@ To visualize the gene expression data, the `heatmap.2()` function from the gplot
 ### 3.1 Importance of Color Selection
 
 - **Diverging color palette:** This palette helps in clearly distinguishing between upregulated and downregulated genes. It uses two contrasting colors, making it ideal for highlighting significant changes.
-
+        ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage2_Coding_and_Visualization/visualizations/Image%20of%20divergent%20colour%20palette.jpg)
     *Figure 1: Image of divergent color palette*
 
 - **Sequential color palette:** This palette helps to visualize a gradient of expression changes. It is useful for observing trends where changes are more gradual rather than radically divergent.
-
+       ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage2_Coding_and_Visualization/visualizations/Image%20of%20sequential%20colour%20palette.jpg)
     *Figure 2: Image of sequential color palette*
 
 Both color variants of the heatmap were included to demonstrate the impact of color choices on data interpretation.
@@ -57,15 +57,15 @@ Both color variants of the heatmap were included to demonstrate the impact of co
 Three different clustering strategies were explored to investigate gene expression patterns across samples:
 
 - **Clustering genes alone (rows):** Grouping genes that show similar expression patterns across samples.
-
+      ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage2_Coding_and_Visualization/visualizations/Clustering%20gene%20(rows).jpg)
     *Figure 3: Clustering gene (rows)*
 
 - **Clustering samples alone (columns):** Grouping samples with similar expression patterns.
-
+      ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage2_Coding_and_Visualization/visualizations/Clustering%20samples%20(columns).jpg)
     *Figure 4: Clustering samples (columns)*
 
 - **Clustering both genes and samples:** A combined approach to observe how genes and samples cluster together.
-
+       ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage2_Coding_and_Visualization/visualizations/Clustering%20of%20both%20genes%20(rows)%20and%20samples%20(columns).jpg)
     *Figure 5: Clustering of both genes (rows) and samples (columns)*
 
 ## 5. Subsetting Genes Based on Expression
@@ -125,7 +125,7 @@ In simpler terms, the process by which cells generate complex chemicals from sim
 ## 8. Visualization of Enrichment Results
 
 To convey the importance of these pathways, a bubble plot was constructed. Each bubble represents one of the top 5 pathways, with the size of the bubble proportional to the number of genes involved and the color representing the log10 p-value for enrichment significance.
-
+      ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage2_Coding_and_Visualization/visualizations/Bubble%20plot%20of%20top%205%20enriched%20pathways.PNG)
     *Figure 6: Bubble plot of top 5 enriched pathways.*
 
 ## 9. Conclusion
