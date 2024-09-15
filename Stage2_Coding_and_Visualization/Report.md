@@ -127,7 +127,7 @@ The expression of genes and cellular function depend on the Transcription proces
 - **Total Pathway Genes:** 4545
 - **Fold Enrichment:** 2.08
 
-In simpler terms, the process by which cells generate complex chemicals from simpler ones is known as Biosynthesis and it is essential to both metabolism and cellular growth. The regulation of biosynthetic pathways is essential for cellular growth, cellular energy-balance maintenance, and for its responsive function towards external stimuli. The pathway’s enrichment in this dataset implies that under-regulating genes related to biosynthetic activities may have important metabolic repercussions.
+In simpler terms, the process by which cells generate complex chemicals from simpler ones is known as Biosynthesis and it is essential to both metabolism and cellular growth. The regulation of biosynthetic pathways is essential for cellular growth, cellular energy-balance maintenance, and for its responsive function towards external stimuli. The pathway’s enrichment in this dataset implies that under-regulating genes related to biosynthetic activities may have important metabolic repercussions.(Mukherjee, A et al., 2014; Journal of Biological Chemistry 289(10), 6569-6579.
 
 ## 8. Visualization of Enrichment Results
 
@@ -143,3 +143,4 @@ The enrichment analysis conducted in this study reveals the critical roles of bi
 
 1. Ashburner, M., Ball, C. A., Blake, J. A., et al. (2000). Gene ontology: Tool for 
    the unification of biology. *Nature Genetics*, 25(1), 25-29. DOI: [10.1038/75556](https://doi.org/10.1038/75556)
+   2.  Mukherjee, A., Rotwein, P. (2014). Transcriptional regulation of biosynthetic processes in skeletal muscle growth. Journal of Biological Chemistry, 289(10), 6569-6579. DOI: 10.1074/jbc.M113.523001
