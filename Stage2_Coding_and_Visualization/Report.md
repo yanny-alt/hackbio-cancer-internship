@@ -78,9 +78,11 @@ Three different clustering strategies were explored to investigate gene expressi
 
 ## 5. Subsetting Genes Based on Expression
 
-To get the p-values and fold changes, DESeq was performed, and then subsets of genes were identified based on significant upregulation and downregulation using team-decided fold change and p-value cutoffs; a significance threshold of 0.05 was chosen. To get the fold change, the following formulas were used: Formulars
-Fold change :old change is final/initial.
-Log2 fold change : log2(final/initial)
+To get the p-values and fold changes, DESeq was performed, and then subsets of genes were identified based on significant upregulation and downregulation using team-decided fold change and p-value cutoffs; a significance threshold of 0.05 was chosen. To get the fold change, the following formulas were used: 
+
+**Formulars:**
+- Fold change : Expression level in final condition / Expression level in Initial Condition
+- Log2 fold change : log2(final/initial)
 
 - **Upregulated genes:** log2Foldchange > 1 and P value < 0.05
 - **Downregulated genes:** log2Foldchange < -1 and P value < 0.05
@@ -121,7 +123,7 @@ One essential biological process that governs the transcription of DNA into mess
 - **Total Pathway Genes:** 2859
 - **Fold Enrichment:** 2.34
 
-The expression of genes and cellular function depend on the Transcription process by RNA polymerase II. The pathway’s over-representation suggests that a large number of the genes in this dataset are crucial for transcriptional processes. The pathway’s significance in maintaining cellular homeostasis and controlling gene expression in response to both external and internal signals is highlighted by the high fold enrichment. (Acker, J et al., (2013).  Nature Reviews Molecular Cell Biology, 14(5), 283-295. 
+The expression of genes and cellular function depend on the Transcription process by RNA polymerase II. The pathway’s over-representation suggests that a large number of the genes in this dataset are crucial for transcriptional processes. The pathway’s significance in maintaining cellular homeostasis and controlling gene expression in response to both external and internal signals is highlighted by the high fold enrichment. (Acker, J et al., (2013).  Nature Reviews Molecular Cell Biology, 14(5), 283-295.) 
 
 ### 7.3 Regulation of Biosynthetic Process (GO:0009889)
 
@@ -130,7 +132,7 @@ The expression of genes and cellular function depend on the Transcription proces
 - **Total Pathway Genes:** 4545
 - **Fold Enrichment:** 2.08
 
-In simpler terms, the process by which cells generate complex chemicals from simpler ones is known as Biosynthesis and it is essential to both metabolism and cellular growth. The regulation of biosynthetic pathways is essential for cellular growth, cellular energy-balance maintenance, and for its responsive function towards external stimuli. The pathway’s enrichment in this dataset implies that under-regulating genes related to biosynthetic activities may have important metabolic repercussions.(Mukherjee, A et al., 2014; Journal of Biological Chemistry 289(10), 6569-6579.
+In simpler terms, the process by which cells generate complex chemicals from simpler ones is known as Biosynthesis and it is essential to both metabolism and cellular growth. The regulation of biosynthetic pathways is essential for cellular growth, cellular energy-balance maintenance, and for its responsive function towards external stimuli. The pathway’s enrichment in this dataset implies that under-regulating genes related to biosynthetic activities may have important metabolic repercussions.(Mukherjee, A et al., 2014; Journal of Biological Chemistry 289(10), 6569-6579.)
 
 ## 8. Visualization of Enrichment Results
 
@@ -146,12 +148,8 @@ The enrichment analysis conducted in this study reveals the critical roles of bi
 
 1. Ashburner, M., Ball, C. A., Blake, J. A., et al. (2000). Gene ontology: Tool for the unification of biology. *Nature Genetics*, 25(1), 25-29. DOI: [10.1038/75556](https://doi.org/10.1038/75556)
 2. Mukherjee, A., Rotwein, P. (2014). Transcriptional regulation of biosynthetic processes in skeletal muscle growth. *Journal of Biological Chemistry*, 289(10), 6569-6579. DOI: [10.1074/jbc.M113.523001](https://doi.org/10.1074/jbc.M113.523001)
-3. Tidyverse:  
-   Wickham, H., Averick, M., Bryan, J., Chang, W., McGowan, L. D. A., François, R., ... & Yutani, H. (2019). Welcome to the Tidyverse. *Journal of Open Source Software*, 4(43), 1686. DOI: [10.21105/joss.01686](https://doi.org/10.21105/joss.01686)
-4. Dplyr:  
-   Wickham, H., François, R., Henry, L., Müller, K., & Vaughan, D. (2023). dplyr: A grammar of data manipulation. R package version 1.1.2. Computer software.
-5. ShinyGO:  
-   Ge, S. X., Jung, D., & Yao, R. (2020). ShinyGO: A graphical gene-set enrichment tool for animals and plants. *Bioinformatics*, 36(8), 2628-2629. DOI: [10.1093/bioinformatics/btz931](https://doi.org/10.1093/bioinformatics/btz931)
-6. DESeq:  
-   Love, M. I., Huber, W., & Anders, S. (2014). Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. *Genome Biology*, 15, 1-21. DOI: [10.1186/s13059-014-0550-8](https://doi.org/10.1186/s13059-014-0550-8)
+3. Wickham, H., Averick, M., Bryan, J., Chang, W., McGowan, L. D. A., François, R., ... & Yutani, H. (2019). Welcome to the Tidyverse. *Journal of Open Source Software*, 4(43), 1686. DOI: [10.21105/joss.01686](https://doi.org/10.21105/joss.01686)
+4. Wickham, H., François, R., Henry, L., Müller, K., & Vaughan, D. (2023). dplyr: A grammar of data manipulation. R package version 1.1.2. Computer software.
+5. Ge, S. X., Jung, D., & Yao, R. (2020). ShinyGO: A graphical gene-set enrichment tool for animals and plants. *Bioinformatics*, 36(8), 2628-2629. DOI: [10.1093/bioinformatics/btz931](https://doi.org/10.1093/bioinformatics/btz931)
+6. Love, M. I., Huber, W., & Anders, S. (2014). Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. *Genome Biology*, 15, 1-21. DOI: [10.1186/s13059-014-0550-8](https://doi.org/10.1186/s13059-014-0550-8)
 7. Acker, J., Conaway, R. C., & Conaway, J. W. (2013). The RNA polymerase II machinery: Insights into structure, function, and regulation. Nature Reviews Molecular Cell Biology, 14(5), 283-295. DOI: 10.1038/nrm3554
