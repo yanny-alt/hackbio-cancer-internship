@@ -29,15 +29,14 @@
 
 ---
 
-# Why TCGA-BRCA Dataset?
+# Abstract
+The study investigates the gene expression profiles of breast cancer using the TCGA-BRCA RNA-Seq dataset, with a focus on upregulated and downregulated genes. The data was processed through normalization and filtering steps to enhance robustness. Differential expression analysis identified 3462 significant genes, which were subjected to enrichment analysis using bioinformatics tools such as `TCGAbiolinks`, `biomaRt`, and `ggplot2`. The analysis identified key molecular pathways involved in breast cancer progression. Furthermore, the study highlights potential biomarkers, categorizing them into upregulated and downregulated genes based on fold change and p-values. Machine learning models, particularly Random Forest, were implemented to predict tumor classification with 100% accuracy. The findings provide insight into the molecular mechanisms of breast cancer and potential diagnostic and therapeutic targets.
 
-Breast cancer dataset is optimal due to its high prevalence and as the most frequent cancer worldwide, breast cancer is a crucial research focus. With more than 1000 samples, it provides strong statistical power for investigation of machine learning and differential expression. Molecular traits and clinical outcomes can be correlated thanks to its extensive clinical annotations.
+## 2. Biomarker Dataset Extraction and Preprocessing
 
-## Dataset Download and Extraction
+Using RStudio, code was written to query and retrieve TCGA-BRCA RNA-Seq data for breast cancer, with a focus on 20 samples each of “Primary Tumor” and “Solid Tissue Normal”. The chosen samples were retrieved along with the gene expression count matrix which was then stored as a CSV file.
 
-Using RStudio, code was written to query and retrieve TCGA-BRCA RNA-Seq data for breast cancer, with a focus on 20 samples each of “Primary Tumor” and “Solid Tissue Normal”. These samples were chosen such that the first 20 samples were solid tissue normal, and the remaining 20 samples were of the BRCA primary tumor. The chosen samples were retrieved along with the gene expression count matrix which was then stored as a CSV file.
-
-## Data Preprocessing Workflow
+### 2.1 Data Cleaning and Normalization
 
 The data underwent normalization with the `TCGAanalyze_normalization()` function. This normalization was done to account for the differences in the length of each gene. The data was then filtered with the `TCGAanalyze_Filtering()` function. A quantile cut threshold of 0.25 was chosen to remove the genes whose expression levels were under the 25th percentile, as these genes could potentially contribute to noise. This filtration step was to ensure more robust downstream analysis.
 
@@ -46,7 +45,8 @@ The data underwent normalization with the `TCGAanalyze_normalization()` function
 - **Figure 2**: Heatmap clustered by row
 - **Figure 3**: Heatmap clustered by column
 
-## 4. Differential Expression Analysis
+
+## 3. Differential Expression Analysis
 EdgeR was the pipeline of choice for analysis of the differential expression of genes between the solid tissue normal (STN) and primary tumor (PT) samples in the filtered breast cancer (BRCA) gene expression dataset. The analysis was done with the `TCGAanalyze_DEA()` function. An FDR cut-off of 0.01 and a log2 fold change cut off 2 were chosen. The result of the analysis was a group of 3462 genes with `abs(log2Foldchange >= 2)` and `FDR <= 0.01`. 98 overregulated and 129 underregulated genes sets were then selected based on stringent log2Foldchange thresholds of `>= 6` and `<= -6` for the former and latter respectively.
 
 **Figure 4**: Volcano plot showing downregulated and upregulated genes.
