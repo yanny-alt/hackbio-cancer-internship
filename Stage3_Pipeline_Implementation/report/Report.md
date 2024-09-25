@@ -1,4 +1,4 @@
-# Stage 03 Task: HackBio Bioinformatics Internship - Cancer Oncology
+# Stage 03 Task: HackBio Bioinformatics Internship - Clinical Oncology
 
 ## Title
 **Identifying Potential Biomarkers in Breast Cancer Using Differential Expression and Machine Learning Approaches**
@@ -50,21 +50,20 @@ Using RStudio, code was written to query and retrieve TCGA-BRCA RNA-Seq data for
 
 The data underwent normalization with the `TCGAanalyze_normalization()` function. This normalization was done to account for the differences in the length of each gene. The data was then filtered with the `TCGAanalyze_Filtering()` function. A quantile cut threshold of 0.25 was chosen to remove the genes whose expression levels were under the 25th percentile, as these genes could potentially contribute to noise. This filtration step was to ensure more robust downstream analysis.
 
-**Figures**:
-   ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage3_Pipeline_Implementation/visualizations/heatmap.jpg)
-- **Figure 1**: Heatmap of filtered dataset (Green: Low, Black: Intermediate, Red: High expression)
+ ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage3_Pipeline_Implementation/visualizations/heatmap.jpg)
+                 *Figure 1: Heatmap of filtered dataset (Green: Low, Black: Intermediate, Red: High expression)*
    ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage3_Pipeline_Implementation/visualizations/Screenshot_20240925_205416_Docs.jpg)
-- **Figure 2**: Heatmap clustered by row
+                  *Figure 2: Heatmap clustered by row*
   ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage3_Pipeline_Implementation/visualizations/Screenshot_20240925_205638_Docs.jpg)
-- **Figure 3**: Heatmap clustered by column
+                   *Figure 3: Heatmap clustered by column*
 
 ## 3. Methodology 
 
 ### 3.1 Differential Expression Analysis
 EdgeR was the pipeline of choice for analysis of the differential expression of genes between the solid tissue normal (STN) and primary tumor (PT) samples in the filtered breast cancer (BRCA) gene expression dataset. The analysis was done with the `TCGAanalyze_DEA()` function. An FDR cut-off of 0.01 and a log2 fold change cut off 2 were chosen. The result of the analysis was a group of 3462 genes with `abs(log2Foldchange >= 2)` and `FDR <= 0.01`. 98 overregulated and 129 underregulated genes sets were then selected based on stringent log2Foldchange thresholds of `>= 6` and `<= -6` for the former and latter respectively.
 
-![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage3_Pipeline_Implementation/visualizations/volcano.jpg)
-**Figure 4**: Volcano plot showing downregulated and upregulated genes.
+ ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage3_Pipeline_Implementation/visualizations/volcano.jpg)
+                       *Figure 4: Volcano plot showing downregulated and upregulated genes.*
 
 ### 3.2 Machine Learning Preparation
 Gene expression data was reshaped for machine learning, with the Random 
@@ -99,12 +98,10 @@ The analysis revealed several significant biomarkers:
 | XIRP2 | -13.24      | 3.57E-100   | Encodes an actin-binding protein, significantly mutated in breast cancer metastasis.(9)                           |
 | MYH   | -13.16      | 3.26E-102   | Part of the base repair pathway, detecting and protecting against oxidative DNA damage. Low expression leads to mutation and cancer.(10) |
 
-**Figures**:
    ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage3_Pipeline_Implementation/visualizations/upreggenepathway_plot%20(1).png)
-- **Figure 5**: Upregulated genes enriched pathways.
+                   *Figure 5: Upregulated genes enriched pathways.*
    ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage3_Pipeline_Implementation/visualizations/downreggenepathway_plot.png)
-- **Figure 6**: Downregulated genes enriched pathways.
-
+                     *Figure 6: Downregulated genes enriched pathways.*
 
 ### 4.2 Model Performance
 **Confusion Matrix**
@@ -114,12 +111,14 @@ The analysis revealed several significant biomarkers:
 | **Normal**           | 6      | 0     |
 | **Tumor**            | 0      | 6     |
 
-    ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage3_Pipeline_Implementation/visualizations/Confusion%20Matrix.png)
-- **Figure 7**: Confusion Matrix
+
+   ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage3_Pipeline_Implementation/visualizations/Confusion%20Matrix.png)
+                         *Figure 7: Confusion Matrix*
 
 The Random Forest model achieved perfect classification with 100% accuracy, as indicated by the confusion matrix, with no misclassifications between "Normal" and "Tumor" samples. Key performance metrics include a 95% Confidence Interval of (0.7354, 1), a Kappa statistic of 1, and perfect sensitivity, specificity, precision, and negative predictive value, all at 1. The model’s performance is statistically significant, and cross-validation confirmed its robustness with a mean accuracy of 96.67%, ensuring generalizability.
+
    ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage3_Pipeline_Implementation/visualizations/rf_model.png)
-- **Figure 8**: Random Forest model
+                        *Figure 8: Random Forest model*
 
 ## 5. Conclusion and Future Directions
 This study successfully identified potential biomarkers like CST5 and MYL in
