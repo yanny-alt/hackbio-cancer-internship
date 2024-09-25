@@ -1,0 +1,43 @@
+"Enrichment_Type","GO_Term","FDR","ng","ncommon"
+"ResBP.Top.BP.n..1.of.2423","GO:0021680~cerebellar Purkinje cell layer development",0.000903,5,2
+"ResBP.Top.BP.n..2.of.2423","GO:0022037~metencephalon development",0.001443,9,2
+"ResBP.Top.BP.n..3.of.2423","GO:0030168~platelet activation",0.001443,11,2
+"ResBP.Top.BP.n..4.of.2423","GO:0030574~collagen catabolic process",0.001443,14,2
+"ResBP.Top.BP.n..5.of.2423","GO:0030902~hindbrain development",0.001443,14,2
+"ResBP.Top.BP.n..6.of.2423","GO:0032963~collagen metabolic process",0.001443,14,2
+"ResBP.Top.BP.n..7.of.2423","GO:0044243~multicellular organismal catabolic process",0.001443,14,2
+"ResBP.Top.BP.n..8.of.2423","GO:0044259~multicellular organismal macromolecule metabolic process",0.001443,14,2
+"ResBP.Top.BP.n..9.of.2423","GO:0044236~multicellular organismal metabolic process",0.001494,15,2
+"ResBP.Top.BP.n..10.of.2423","GO:0048839~inner ear development",0.001549,16,2
+"ResBP.Top.BP.n..11.of.2423","GO:0007605~sensory perception of sound",0.002553,22,2
+"ResBP.Top.BP.n..12.of.2423","GO:0050954~sensory perception of mechanical stimulus",0.002553,22,2
+"ResBP.Top.BP.n..13.of.2423","GO:0007596~blood coagulation",0.005066,33,2
+"ResBP.Top.BP.n..14.of.2423","GO:0050817~coagulation",0.005066,33,2
+"ResBP.Top.BP.n..15.of.2423","GO:0007599~hemostasis",0.005329,35,2
+"ResBP.Top.BP.n..16.of.2423","GO:0050878~regulation of body fluid levels",0.005551,37,2
+"ResBP.Top.BP.n..17.of.2423","GO:0060191~regulation of lipase activity",0.005551,38,2
+"ResBP.Top.BP.n..18.of.2423","GO:0030001~metal ion transport",0.009592,289,4
+"ResBP.Top.BP.n..19.of.2423","GO:0042060~wound healing",0.009624,53,2
+"ResMF.Top.MF.n..1.of.1157","GO:0004869~cysteine-type endopeptidase inhibitor activity",0.000164,20,3
+"ResMF.Top.MF.n..2.of.1157","GO:0046873~metal ion transmembrane transporter activity",0.002144,243,5
+"ResMF.Top.MF.n..3.of.1157","GO:0030674~protein binding, bridging",0.002144,65,3
+"ResMF.Top.MF.n..4.of.1157","GO:0004866~endopeptidase inhibitor activity",0.002546,81,3
+"ResMF.Top.MF.n..5.of.1157","GO:0030414~peptidase inhibitor activity",0.002546,82,3
+"ResMF.Top.MF.n..6.of.1157","GO:0003829~beta-1,3-galactosyl-O-glycosyl-glycoprotein beta-1,6-N-acetylglucosaminyltransferase activity",0.00851,4,1
+"ResMF.Top.MF.n..7.of.1157","GO:0008109~N-acetyllactosaminide beta-1,6-N-acetylglucosaminyltransferase activity",0.00851,4,1
+"ResMF.Top.MF.n..8.of.1157","GO:0060230~lipoprotein lipase activator activity",0.00851,4,1
+"ResCC.Top.CC.n..1.of.517","GO:0005576~extracellular region",1.76e-05,1179,14
+"ResCC.Top.CC.n..2.of.517","GO:0031012~extracellular matrix",0.000132,128,5
+"ResCC.Top.CC.n..3.of.517","GO:0005578~proteinaceous extracellular matrix",0.000266,171,5
+"ResCC.Top.CC.n..4.of.517","GO:0005577~fibrinogen complex",0.000266,7,2
+"ResCC.Top.CC.n..5.of.517","GO:0044459~plasma membrane part",0.00158,1293,11
+"ResCC.Top.CC.n..6.of.517","GO:0044421~extracellular region part",0.00226,605,7
+"ResCC.Top.CC.n..7.of.517","GO:0031091~platelet alpha granule",0.00318,27,2
+"ResCC.Top.CC.n..8.of.517","GO:0005581~collagen",0.0042,33,2
+"ResCC.Top.CC.n..9.of.517","GO:0044420~extracellular matrix part",0.00551,40,2
+"ResPat.Top.Pathway.n..1.of.589","Intrinsic Prothrombin Activation Pathway",0.000408,28,3
+"ResPat.Top.Pathway.n..2.of.589","Extrinsic Prothrombin Activation Pathway",0.00279,16,2
+"ResPat.Top.Pathway.n..3.of.589","Role of Tissue Factor in Cancer",0.00628,107,3
+"ResPat.Top.Pathway.n..4.of.589","Coagulation System",0.00628,35,2
+"ResPat.Top.Pathway.n..5.of.589","Inhibition of Matrix Metalloproteases",0.00628,38,2
+"ResPat.Top.Pathway.n..6.of.589","Granulocyte Adhesion and Diapedesis",0.009961,163,3

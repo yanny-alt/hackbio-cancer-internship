@@ -1,0 +1,159 @@
+"Enrichment_Type","GO_Term","FDR","ng","ncommon"
+"ResBP.Top.BP.n..1.of.2423","GO:0006941~striated muscle contraction",2.58e-18,25,11
+"ResBP.Top.BP.n..2.of.2423","GO:0007517~muscle organ development",1.34e-13,84,12
+"ResBP.Top.BP.n..3.of.2423","GO:0006936~muscle contraction",1.34e-13,29,9
+"ResBP.Top.BP.n..4.of.2423","GO:0003012~muscle system process",2.06e-13,31,9
+"ResBP.Top.BP.n..5.of.2423","GO:0060537~muscle tissue development",3.9e-11,53,9
+"ResBP.Top.BP.n..6.of.2423","GO:0003009~skeletal muscle contraction",1.79e-10,7,5
+"ResBP.Top.BP.n..7.of.2423","GO:0007519~skeletal muscle tissue development",3.18e-10,28,7
+"ResBP.Top.BP.n..8.of.2423","GO:0060538~skeletal muscle organ development",3.18e-10,28,7
+"ResBP.Top.BP.n..9.of.2423","GO:0050879~multicellular organismal movement",3.18e-10,8,5
+"ResBP.Top.BP.n..10.of.2423","GO:0050881~musculoskeletal movement",3.18e-10,8,5
+"ResBP.Top.BP.n..11.of.2423","GO:0055008~cardiac muscle tissue morphogenesis",3.18e-10,16,6
+"ResBP.Top.BP.n..12.of.2423","GO:0060415~muscle tissue morphogenesis",3.18e-10,16,6
+"ResBP.Top.BP.n..13.of.2423","GO:0048738~cardiac muscle tissue development",4.07e-08,32,6
+"ResBP.Top.BP.n..14.of.2423","GO:0003007~heart morphogenesis",5.64e-08,34,6
+"ResBP.Top.BP.n..15.of.2423","GO:0014706~striated muscle tissue development",1.08e-06,29,5
+"ResBP.Top.BP.n..16.of.2423","GO:0030239~myofibril assembly",1.75e-06,14,4
+"ResBP.Top.BP.n..17.of.2423","GO:0051146~striated muscle cell differentiation",8.74e-06,20,4
+"ResBP.Top.BP.n..18.of.2423","GO:0006942~regulation of striated muscle contraction",1.48e-05,8,3
+"ResBP.Top.BP.n..19.of.2423","GO:0030049~muscle filament sliding",1.48e-05,8,3
+"ResBP.Top.BP.n..20.of.2423","GO:0033275~actin-myosin filament sliding",1.48e-05,8,3
+"ResBP.Top.BP.n..21.of.2423","GO:0070252~actin-mediated cell contraction",1.48e-05,8,3
+"ResBP.Top.BP.n..22.of.2423","GO:0042692~muscle cell differentiation",1.82e-05,25,4
+"ResBP.Top.BP.n..23.of.2423","GO:0003015~heart process",2.07e-05,9,3
+"ResBP.Top.BP.n..24.of.2423","GO:0060047~heart contraction",2.07e-05,9,3
+"ResBP.Top.BP.n..25.of.2423","GO:0048878~chemical homeostasis",7.75e-05,251,8
+"ResBP.Top.BP.n..26.of.2423","GO:0006873~cellular ion homeostasis",0.000109,193,7
+"ResBP.Top.BP.n..27.of.2423","GO:0055082~cellular chemical homeostasis",0.000119,197,7
+"ResBP.Top.BP.n..28.of.2423","GO:0050801~ion homeostasis",0.000144,204,7
+"ResBP.Top.BP.n..29.of.2423","GO:0030048~actin filament-based movement",0.000201,18,3
+"ResBP.Top.BP.n..30.of.2423","GO:0019725~cellular homeostasis",0.000225,224,7
+"ResBP.Top.BP.n..31.of.2423","GO:0006094~gluconeogenesis",0.000225,19,3
+"ResBP.Top.BP.n..32.of.2423","GO:0019319~hexose biosynthetic process",0.000352,22,3
+"ResBP.Top.BP.n..33.of.2423","GO:0045988~negative regulation of striated muscle contraction",0.000358,5,2
+"ResBP.Top.BP.n..34.of.2423","GO:0006090~pyruvate metabolic process",0.000365,23,3
+"ResBP.Top.BP.n..35.of.2423","GO:0042592~homeostatic process",0.000365,331,8
+"ResBP.Top.BP.n..36.of.2423","GO:0019318~hexose metabolic process",0.000365,109,5
+"ResBP.Top.BP.n..37.of.2423","GO:0015674~di-, tri-valent inorganic cation transport",0.000488,116,5
+"ResBP.Top.BP.n..38.of.2423","GO:0046364~monosaccharide biosynthetic process",0.000488,26,3
+"ResBP.Top.BP.n..39.of.2423","GO:0045214~sarcomere organization",0.000488,6,2
+"ResBP.Top.BP.n..40.of.2423","GO:0048041~focal adhesion formation",0.000488,6,2
+"ResBP.Top.BP.n..41.of.2423","GO:0005996~monosaccharide metabolic process",0.000488,119,5
+"ResBP.Top.BP.n..42.of.2423","GO:0030705~cytoskeleton-dependent intracellular transport",0.000516,27,3
+"ResBP.Top.BP.n..43.of.2423","GO:0007528~neuromuscular junction development",0.000653,7,2
+"ResBP.Top.BP.n..44.of.2423","GO:0043462~regulation of ATPase activity",0.000653,7,2
+"ResBP.Top.BP.n..45.of.2423","GO:0045932~negative regulation of muscle contraction",0.000653,7,2
+"ResBP.Top.BP.n..46.of.2423","GO:0046165~alcohol biosynthetic process",0.000725,31,3
+"ResBP.Top.BP.n..47.of.2423","GO:0048741~skeletal muscle fiber development",0.000854,8,2
+"ResBP.Top.BP.n..48.of.2423","GO:0060048~cardiac muscle contraction",0.000854,8,2
+"ResBP.Top.BP.n..49.of.2423","GO:0055080~cation homeostasis",0.00117,148,5
+"ResBP.Top.BP.n..50.of.2423","GO:0007507~heart development",0.00132,39,3
+"ResBP.Top.BP.n..51.of.2423","GO:0034637~cellular carbohydrate biosynthetic process",0.00132,39,3
+"ResBP.Top.BP.n..52.of.2423","GO:0010927~cellular component assembly involved in morphogenesis",0.00132,10,2
+"ResBP.Top.BP.n..53.of.2423","GO:0034381~lipoprotein particle clearance",0.00132,10,2
+"ResBP.Top.BP.n..54.of.2423","GO:0048747~muscle fiber development",0.00161,11,2
+"ResBP.Top.BP.n..55.of.2423","GO:0030003~cellular cation homeostasis",0.0017,96,4
+"ResBP.Top.BP.n..56.of.2423","GO:0055001~muscle cell development",0.00227,13,2
+"ResBP.Top.BP.n..57.of.2423","GO:0006811~ion transport",0.00229,578,9
+"ResBP.Top.BP.n..58.of.2423","GO:0010743~regulation of foam cell differentiation",0.00258,14,2
+"ResBP.Top.BP.n..59.of.2423","GO:0042391~regulation of membrane potential",0.00336,56,3
+"ResBP.Top.BP.n..60.of.2423","GO:0006006~glucose metabolic process",0.00348,58,3
+"ResBP.Top.BP.n..61.of.2423","GO:0009154~purine ribonucleotide catabolic process",0.00474,19,2
+"ResBP.Top.BP.n..62.of.2423","GO:0009261~ribonucleotide catabolic process",0.00519,20,2
+"ResBP.Top.BP.n..63.of.2423","GO:0005977~glycogen metabolic process",0.0057,23,2
+"ResBP.Top.BP.n..64.of.2423","GO:0006073~cellular glucan metabolic process",0.0057,23,2
+"ResBP.Top.BP.n..65.of.2423","GO:0006112~energy reserve metabolic process",0.0057,23,2
+"ResBP.Top.BP.n..66.of.2423","GO:0044042~glucan metabolic process",0.0057,23,2
+"ResBP.Top.BP.n..67.of.2423","GO:0044264~cellular polysaccharide metabolic process",0.0057,23,2
+"ResBP.Top.BP.n..68.of.2423","GO:0051260~protein homooligomerization",0.0057,23,2
+"ResBP.Top.BP.n..69.of.2423","GO:0048729~tissue morphogenesis",0.0057,71,3
+"ResBP.Top.BP.n..70.of.2423","GO:0051241~negative regulation of multicellular organismal process",0.00657,75,3
+"ResBP.Top.BP.n..71.of.2423","GO:0006195~purine nucleotide catabolic process",0.00663,24,2
+"ResBP.Top.BP.n..72.of.2423","GO:0006816~calcium ion transport",0.00663,76,3
+"ResBP.Top.BP.n..73.of.2423","GO:0006638~neutral lipid metabolic process",0.0074,27,2
+"ResBP.Top.BP.n..74.of.2423","GO:0006639~acylglycerol metabolic process",0.0074,27,2
+"ResBP.Top.BP.n..75.of.2423","GO:0006662~glycerol ether metabolic process",0.0074,27,2
+"ResBP.Top.BP.n..76.of.2423","GO:0006754~ATP biosynthetic process",0.00784,84,3
+"ResBP.Top.BP.n..77.of.2423","GO:0009201~ribonucleoside triphosphate biosynthetic process",0.00784,84,3
+"ResBP.Top.BP.n..78.of.2423","GO:0009206~purine ribonucleoside triphosphate biosynthetic process",0.00784,84,3
+"ResBP.Top.BP.n..79.of.2423","GO:0009142~nucleoside triphosphate biosynthetic process",0.00791,85,3
+"ResBP.Top.BP.n..80.of.2423","GO:0009145~purine nucleoside triphosphate biosynthetic process",0.00791,85,3
+"ResBP.Top.BP.n..81.of.2423","GO:0018904~organic ether metabolic process",0.00796,29,2
+"ResBP.Top.BP.n..82.of.2423","GO:0009199~ribonucleoside triphosphate metabolic process",0.00857,89,3
+"ResBP.Top.BP.n..83.of.2423","GO:0009205~purine ribonucleoside triphosphate metabolic process",0.00857,89,3
+"ResBP.Top.BP.n..84.of.2423","GO:0046034~ATP metabolic process",0.00857,89,3
+"ResBP.Top.BP.n..85.of.2423","GO:0009166~nucleotide catabolic process",0.00873,30,2
+"ResBP.Top.BP.n..86.of.2423","GO:0009141~nucleoside triphosphate metabolic process",0.00881,91,3
+"ResBP.Top.BP.n..87.of.2423","GO:0009144~purine nucleoside triphosphate metabolic process",0.00881,91,3
+"ResBP.Top.BP.n..88.of.2423","GO:0008217~regulation of blood pressure",0.0089,31,2
+"ResBP.Top.BP.n..89.of.2423","GO:0019216~regulation of lipid metabolic process",0.0089,31,2
+"ResBP.Top.BP.n..90.of.2423","GO:0009152~purine ribonucleotide biosynthetic process",0.00918,94,3
+"ResBP.Top.BP.n..91.of.2423","GO:0034655~nucleobase, nucleoside, nucleotide and nucleic acid catabolic process",0.00918,32,2
+"ResBP.Top.BP.n..92.of.2423","GO:0034656~nucleobase, nucleoside and nucleotide catabolic process",0.00918,32,2
+"ResBP.Top.BP.n..93.of.2423","GO:0009260~ribonucleotide biosynthetic process",0.00929,95,3
+"ResMF.Top.MF.n..1.of.1157","GO:0008092~cytoskeletal protein binding",1.2e-25,249,25
+"ResMF.Top.MF.n..2.of.1157","GO:0003779~actin binding",4.66e-21,130,18
+"ResMF.Top.MF.n..3.of.1157","GO:0008307~structural constituent of muscle",6.09e-17,26,10
+"ResMF.Top.MF.n..4.of.1157","GO:0005198~structural molecule activity",1.5e-07,467,14
+"ResMF.Top.MF.n..5.of.1157","GO:0003774~motor activity",0.000122,133,6
+"ResMF.Top.MF.n..6.of.1157","GO:0005516~calmodulin binding",0.000122,41,4
+"ResMF.Top.MF.n..7.of.1157","GO:0046983~protein dimerization activity",0.000159,89,5
+"ResMF.Top.MF.n..8.of.1157","GO:0031013~troponin I binding",0.000267,5,2
+"ResMF.Top.MF.n..9.of.1157","GO:0031014~troponin T binding",0.000267,5,2
+"ResMF.Top.MF.n..10.of.1157","GO:0032036~myosin heavy chain binding",0.000267,5,2
+"ResMF.Top.MF.n..11.of.1157","GO:0003785~actin monomer binding",0.000603,7,2
+"ResMF.Top.MF.n..12.of.1157","GO:0017022~myosin binding",0.000771,8,2
+"ResMF.Top.MF.n..13.of.1157","GO:0005523~tropomyosin binding",0.000947,9,2
+"ResMF.Top.MF.n..14.of.1157","GO:0005391~sodium:potassium-exchanging ATPase activity",0.00113,10,2
+"ResMF.Top.MF.n..15.of.1157","GO:0042803~protein homodimerization activity",0.00213,51,3
+"ResMF.Top.MF.n..16.of.1157","GO:0015662~ATPase activity, coupled to transmembrane movement of ions, phosphorylative mechanism",0.00213,51,3
+"ResMF.Top.MF.n..17.of.1157","GO:0000146~microfilament motor activity",0.00342,18,2
+"ResMF.Top.MF.n..18.of.1157","GO:0015077~monovalent inorganic cation transmembrane transporter activity",0.00506,73,3
+"ResMF.Top.MF.n..19.of.1157","GO:0042625~ATPase activity, coupled to transmembrane movement of ions",0.00506,73,3
+"ResMF.Top.MF.n..20.of.1157","GO:0005245~voltage-gated calcium channel activity",0.00626,26,2
+"ResMF.Top.MF.n..21.of.1157","GO:0005178~integrin binding",0.00852,31,2
+"ResCC.Top.CC.n..1.of.517","GO:0043292~contractile fiber",7.95e-30,58,19
+"ResCC.Top.CC.n..2.of.517","GO:0030016~myofibril",4.73e-29,52,18
+"ResCC.Top.CC.n..3.of.517","GO:0030017~sarcomere",2.08e-28,45,17
+"ResCC.Top.CC.n..4.of.517","GO:0044449~contractile fiber part",7.12e-27,54,17
+"ResCC.Top.CC.n..5.of.517","GO:0015629~actin cytoskeleton",4.71e-21,110,17
+"ResCC.Top.CC.n..6.of.517","GO:0016459~myosin complex",1.56e-11,57,9
+"ResCC.Top.CC.n..7.of.517","GO:0005865~striated muscle thin filament",4.46e-11,14,6
+"ResCC.Top.CC.n..8.of.517","GO:0032982~myosin filament",2.62e-10,18,6
+"ResCC.Top.CC.n..9.of.517","GO:0005861~troponin complex",2.62e-10,9,5
+"ResCC.Top.CC.n..10.of.517","GO:0005859~muscle myosin complex",3.16e-08,19,5
+"ResCC.Top.CC.n..11.of.517","GO:0016460~myosin II complex",3.16e-08,19,5
+"ResCC.Top.CC.n..12.of.517","GO:0005863~striated muscle thick filament",3.51e-06,7,3
+"ResCC.Top.CC.n..13.of.517","GO:0005884~actin filament",1.25e-05,10,3
+"ResCC.Top.CC.n..14.of.517","GO:0031672~A band",1.25e-05,10,3
+"ResCC.Top.CC.n..15.of.517","GO:0044430~cytoskeletal part",2.09e-05,396,10
+"ResCC.Top.CC.n..16.of.517","GO:0042383~sarcolemma",7.13e-05,17,3
+"ResCC.Top.CC.n..17.of.517","GO:0043228~non-membrane-bounded organelle",7.48e-05,1269,17
+"ResCC.Top.CC.n..18.of.517","GO:0043232~intracellular non-membrane-bounded organelle",7.48e-05,1269,17
+"ResCC.Top.CC.n..19.of.517","GO:0031143~pseudopodium",0.000147,5,2
+"ResCC.Top.CC.n..20.of.517","GO:0005891~voltage-gated calcium channel complex",0.00443,22,2
+"ResCC.Top.CC.n..21.of.517","GO:0034704~calcium channel complex",0.00443,22,2
+"ResCC.Top.CC.n..22.of.517","GO:0005625~soluble fraction",0.00631,160,4
+"ResPat.Top.Pathway.n..1.of.589","Calcium Signaling",1.03e-15,168,16
+"ResPat.Top.Pathway.n..2.of.589","Actin Cytoskeleton Signaling",3.51e-08,210,11
+"ResPat.Top.Pathway.n..3.of.589","Cellular Effects of Sildenafil (Viagra)",4.21e-08,124,9
+"ResPat.Top.Pathway.n..4.of.589","Epithelial Adherens Junction Signaling",1.05e-07,144,9
+"ResPat.Top.Pathway.n..5.of.589","ILK Signaling",6.9e-07,181,9
+"ResPat.Top.Pathway.n..6.of.589","Hepatic Fibrosis / Hepatic Stellate Cell Activation",1.21e-05,137,7
+"ResPat.Top.Pathway.n..7.of.589","Tight Junction Signaling",1.99e-05,151,7
+"ResPat.Top.Pathway.n..8.of.589","Agranulocyte Adhesion and Diapedesis",3.38e-05,173,7
+"ResPat.Top.Pathway.n..9.of.589","Protein Kinase A Signaling",0.000115,365,9
+"ResPat.Top.Pathway.n..10.of.589","RhoA Signaling",0.000402,115,5
+"ResPat.Top.Pathway.n..11.of.589","Regulation of Actin-based Motility by Rho",0.00115,82,4
+"ResPat.Top.Pathway.n..12.of.589","Integrin Signaling",0.00378,193,5
+"ResPat.Top.Pathway.n..13.of.589","Cardiomyocyte Differentiation via BMP Receptors",0.00494,18,2
+"ResPat.Top.Pathway.n..14.of.589","Remodeling of Epithelial Adherens Junctions",0.00494,66,3
+"ResPat.Top.Pathway.n..15.of.589","Signaling by Rho Family GTPases",0.00601,228,5
+"ResPat.Top.Pathway.n..16.of.589","4-hydroxybenzoate Biosynthesis",0.00601,1,1
+"ResPat.Top.Pathway.n..17.of.589","4-hydroxyphenylpyruvate Biosynthesis",0.00601,1,1
+"ResPat.Top.Pathway.n..18.of.589","Dopamine-DARPP32 Feedback in cAMP Signaling",0.00721,156,4
+"ResPat.Top.Pathway.n..19.of.589","Sertoli Cell-Sertoli Cell Junction Signaling",0.00824,172,4
+"ResPat.Top.Pathway.n..20.of.589","PAK Signaling",0.00824,88,3
+"ResPat.Top.Pathway.n..21.of.589","RhoGDI Signaling",0.00824,172,4
+"ResPat.Top.Pathway.n..22.of.589","VEGF Signaling",0.00824,89,3
