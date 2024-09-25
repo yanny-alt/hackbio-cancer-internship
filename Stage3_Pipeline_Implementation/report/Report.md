@@ -29,14 +29,17 @@
 
 ---
 
-## 1. Why TCGA-BRCA Dataset?
-The breast cancer dataset is optimal due to its high prevalence. As the most frequent cancer worldwide, breast cancer is a crucial research focus. With more than 1000 samples, it provides strong statistical power for investigating machine learning and differential expression. The extensive clinical annotations enable correlating molecular traits with clinical outcomes.
+# Why TCGA-BRCA Dataset?
 
-## 2. Dataset Download and Extraction
-Using RStudio, code was written to query and retrieve TCGA-BRCA RNA-Seq data for breast cancer, focusing on 20 samples each of “Primary Tumor” and “Solid Tissue Normal.” The first 20 samples were solid tissue normal, and the remaining 20 were BRCA primary tumor. The gene expression count matrix was stored as a CSV file.
+Breast cancer dataset is optimal due to its high prevalence and as the most frequent cancer worldwide, breast cancer is a crucial research focus. With more than 1000 samples, it provides strong statistical power for investigation of machine learning and differential expression. Molecular traits and clinical outcomes can be correlated thanks to its extensive clinical annotations.
 
-## 3. Data Preprocessing Workflow
-Normalization was done using `TCGAanalyze_normalization()`, followed by filtering with `TCGAanalyze_Filtering()` at a quantile cut threshold of 0.25 to remove low-expressed genes.
+## Dataset Download and Extraction
+
+Using RStudio, code was written to query and retrieve TCGA-BRCA RNA-Seq data for breast cancer, with a focus on 20 samples each of “Primary Tumor” and “Solid Tissue Normal”. These samples were chosen such that the first 20 samples were solid tissue normal, and the remaining 20 samples were of the BRCA primary tumor. The chosen samples were retrieved along with the gene expression count matrix which was then stored as a CSV file.
+
+## Data Preprocessing Workflow
+
+The data underwent normalization with the `TCGAanalyze_normalization()` function. This normalization was done to account for the differences in the length of each gene. The data was then filtered with the `TCGAanalyze_Filtering()` function. A quantile cut threshold of 0.25 was chosen to remove the genes whose expression levels were under the 25th percentile, as these genes could potentially contribute to noise. This filtration step was to ensure more robust downstream analysis.
 
 **Figures**:
 - **Figure 1**: Heatmap of filtered dataset (Green: Low, Black: Intermediate, Red: High expression)
@@ -44,12 +47,12 @@ Normalization was done using `TCGAanalyze_normalization()`, followed by filterin
 - **Figure 3**: Heatmap clustered by column
 
 ## 4. Differential Expression Analysis
-EdgeR was used to analyze differential expression between solid tissue normal (STN) and primary tumor (PT) samples using `TCGAanalyze_DEA()` with an FDR cutoff of 0.01 and a log2 fold change cutoff of 2. A total of 3462 genes were identified, with 98 overregulated and 129 underregulated.
+EdgeR was the pipeline of choice for analysis of the differential expression of genes between the solid tissue normal (STN) and primary tumor (PT) samples in the filtered breast cancer (BRCA) gene expression dataset. The analysis was done with the `TCGAanalyze_DEA()` function. An FDR cut-off of 0.01 and a log2 fold change cut off 2 were chosen. The result of the analysis was a group of 3462 genes with `abs(log2Foldchange >= 2)` and `FDR <= 0.01`. 98 overregulated and 129 underregulated genes sets were then selected based on stringent log2Foldchange thresholds of `>= 6` and `<= -6` for the former and latter respectively.
 
 **Figure 4**: Volcano plot showing downregulated and upregulated genes.
 
 ## 5. Enrichment Analysis
-Enrichment analysis was performed using bioinformatics libraries like TCGAbiolinks and ggplot2. Gene lists were created for enrichment analysis, and lollipop plots were generated for the top five enriched pathways.
+The gene enrichment analysis for upregulated and downregulated genes using various bioinformatics libraries. It begins by loading libraries such as `TCGAbiolinks`, `biomaRt`, and `ggplot2`. The script reads CSV files containing Ensembl gene IDs, retrieves corresponding gene symbols from the Ensembl database, and merges this information into new datasets. After preparing gene lists for enrichment analysis, it utilizes the `TCGAanalyze_EAcomplete` function to perform the analysis and save the results in CSV format. The script reshapes the enrichment data using functions from the `tidyr` package, extracting relevant details like GO terms and FDR values. Finally, it creates lollipop plots for the top five enriched pathways, employing `ggplot2` for visualization. The plots display FDR values, and the number of genes associated with each pathway, which are then saved as PNG files.
 
 **Figure 5**: Upregulated genes enriched pathways.  
 **Figure 6**: Downregulated genes enriched pathways.
