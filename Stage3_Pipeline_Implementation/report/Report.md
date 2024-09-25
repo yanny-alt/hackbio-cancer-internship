@@ -71,7 +71,7 @@ dataset. The Random Forest model trained with 500 trees showed high
 performance on the test set.
 
 ### 3.3 Potential Biomarkers and Enrichment Analysis
-This section performs a comprehensive analysis of gene expression data, focusing on identifying key upregulated and downregulated genes and performing enrichment analysis. The process begins by reading two CSV files, one containing upregulated genes and the other downregulated genes. The Ensembl IDs in these files are then converted to gene symbols using the `biomaRt` package. Afterward, the script identifies the top 5 genes for both upregulated and downregulated categories, saving these results into CSV files. Subsequently, the enrichment analysis is conducted using the `TCGAanalyze_EAcomplete` function. The resulting data is further processed to prepare for visualization by separating the enrichment results into distinct columns for GO terms, FDR values, and gene counts. The top 5 pathways for both upregulated and downregulated genes are selected based on their FDR values. To visualize the results, a lollipop plot is created for each set, where the circle size represents the number of genes involved, and the color intensity corresponds to the FDR. These plots are saved as PNG files, offering a clear graphical summary of the most biologically relevant pathways for both upregulated and downregulated genes.
+This section presents a comprehensive analysis of gene expression data, focusing on identifying key upregulated and downregulated genes and performing enrichment analysis. The process begins with the gene enrichment analysis of these genes. Libraries such as `TCGAbiolinks`, `biomaRt`, and `ggplot2` were utilized to facilitate the extraction of gene symbols. Enrichment analysis was performed using the `TCGAanalyze_EAcomplete` function, and `ggplot2` was employed to create lollipop plots of the top five enriched pathways. These plots included FDR values and gene count, visually representing the most significantly enriched pathways, with circle size representing the number of genes involved and color intensity displayed based on the FDR values.
 
 ## 4. Results and Interpretation
 
@@ -95,8 +95,7 @@ The analysis revealed several significant biomarkers:
 | XIRP2 | -13.24      | 3.57E-100   | Encodes an actin-binding protein, significantly mutated in breast cancer metastasis.(9)                           |
 | MYH   | -13.16      | 3.26E-102   | Part of the base repair pathway, detecting and protecting against oxidative DNA damage. Low expression leads to mutation and cancer.(10) |
 
-## Figures
-
+**Figures**:
 - **Figure 5**: Upregulated genes enriched pathways.
 - **Figure 6**: Downregulated genes enriched pathways.
 
