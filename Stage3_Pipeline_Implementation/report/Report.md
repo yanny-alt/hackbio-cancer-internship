@@ -32,7 +32,7 @@
 # Abstract
 Utilising the TCGA-BRCA RNA-Seq data, this study combines machine learning with differential gene expression (DGE) to identify key biomarkers in breast cancer. Significantly upregulated genes like CGA and CST5 and downregulated genes like XIRP2 and MYL, which are associated with tumour growth and prognosis were revealed by DGE. With 100% accuracy, a Random Forest model was used to Classify normal and tumour samples where Dim2 and Dim9 presented to be the most crucial features for classification. The findings of this study demonstrates the biomarkers’ potential to enhance breast cancer diagnosis and treatment approaches.
 
-## Introduction
+## 1. Introduction
 Breast cancer is one of the most prevalent cancers worldwide, and the 
 discovery of potential biomarkers can aid in early diagnosis and treatment. 
 Using the TCGA-BRCA dataset, which contains gene expression data from 
@@ -43,8 +43,7 @@ discovery
 ### 1.1 Why TCGA-BRCA Dataset?
 The TCGA-BRCA dataset is optimal due to its vast sample size, covering over 1000 breast cancer cases. This large-scale data enables robust statistical power in investigating both machine learning applications and differential expression analysis. Additionally, the extensive clinical annotations provided allow for correlating molecular traits with clinical outcomes, making it a comprehensive resource for breast cancer research.
 
-## 2. Biomarker Dataset Extraction and Preprocessing
-
+## 2. Description of the Dataset and Preprocessing
 Using RStudio, code was written to query and retrieve TCGA-BRCA RNA-Seq data for breast cancer, with a focus on 20 samples each of “Primary Tumor” and “Solid Tissue Normal”. The chosen samples were retrieved along with the gene expression count matrix which was then stored as a CSV file.
 
 ### 2.1 Data Cleaning and Normalization
@@ -58,13 +57,28 @@ The data underwent normalization with the `TCGAanalyze_normalization()` function
 
 ## 3. Methodology 
 
-## 3.1 Differential Expression Analysis
+### 3.1 Differential Expression Analysis
 EdgeR was the pipeline of choice for analysis of the differential expression of genes between the solid tissue normal (STN) and primary tumor (PT) samples in the filtered breast cancer (BRCA) gene expression dataset. The analysis was done with the `TCGAanalyze_DEA()` function. An FDR cut-off of 0.01 and a log2 fold change cut off 2 were chosen. The result of the analysis was a group of 3462 genes with `abs(log2Foldchange >= 2)` and `FDR <= 0.01`. 98 overregulated and 129 underregulated genes sets were then selected based on stringent log2Foldchange thresholds of `>= 6` and `<= -6` for the former and latter respectively.
 
 **Figure 4**: Volcano plot showing downregulated and upregulated genes.
 
-## 5. Enrichment Analysis
+### 3.2 Enrichment Analysis
 The gene enrichment analysis for upregulated and downregulated genes using various bioinformatics libraries. It begins by loading libraries such as `TCGAbiolinks`, `biomaRt`, and `ggplot2`. The script reads CSV files containing Ensembl gene IDs, retrieves corresponding gene symbols from the Ensembl database, and merges this information into new datasets. After preparing gene lists for enrichment analysis, it utilizes the `TCGAanalyze_EAcomplete` function to perform the analysis and save the results in CSV format. The script reshapes the enrichment data using functions from the `tidyr` package, extracting relevant details like GO terms and FDR values. Finally, it creates lollipop plots for the top five enriched pathways, employing `ggplot2` for visualization. The plots display FDR values, and the number of genes associated with each pathway, which are then saved as PNG files.
+
+### 3.3 Machine Learning Preparation
+Gene expression data was reshaped for machine learning, with the Random 
+Forest algorithm chosen for classification. Data was split into training (70%) 
+and test (30%) sets. Dimensionality reduction was performed using Principal
+Component Analysis (PCA) to address the high-dimensional nature of the 
+dataset. The Random Forest model trained with 500 trees showed high 
+performance on the test set.
+
+### 3.4 Model Performance 
+#### 3.4a Confusion Matrix
+| Prediction/Reference | Normal | Tumor |
+|----------------------|--------|-------|
+| **Normal**           | 6      | 0     |
+| **Tumor**            | 0      | 6     |
 
 ## 6. Potential Biomarkers
 This section performs a comprehensive analysis of gene expression data, focusing on identifying key upregulated and downregulated genes and performing enrichment analysis. The process begins by reading two CSV files, one containing upregulated genes and the other downregulated genes. The Ensembl IDs in these files are then converted to gene symbols using the `biomaRt` package. Afterward, the script identifies the top 5 genes for both upregulated and downregulated categories, saving these results into CSV files. Subsequently, the enrichment analysis is conducted using the `TCGAanalyze_EAcomplete` function. The resulting data is further processed to prepare for visualization by separating the enrichment results into distinct columns for GO terms, FDR values, and gene counts. The top 5 pathways for both upregulated and downregulated genes are selected based on their FDR values. To visualize the results, a lollipop plot is created for each set, where the circle size represents the number of genes involved, and the color intensity corresponds to the FDR. These plots are saved as PNG files, offering a clear graphical summary of the most biologically relevant pathways for both upregulated and downregulated genes.
@@ -91,15 +105,6 @@ This section performs a comprehensive analysis of gene expression data, focusing
 - **Figure 5**: Upregulated genes enriched pathways.
 - **Figure 6**: Downregulated genes enriched pathways.
 
-## 8. Machine Learning Analysis
-### 8.1 Dataset Preparation
-The dataset was split into 70% training and 30% test data. Labels were assigned as "Normal" or "Tumor" for machine learning classification. 
-
-### 8.2 Feature Selection and Dimensionality Reduction
-Using Principal Component Analysis (PCA), features were selected based on the most relevant biomarkers identified during enrichment analysis to reduce dimensionality.
-
-## 9. Model Selection and Training
-Random Forest was chosen for its ability to handle high-dimensional data. The model was trained with 500 trees and achieved high performance.
 
 ## 10. Model Performance
 ### 10.1 Confusion Matrix
