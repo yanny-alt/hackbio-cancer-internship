@@ -51,8 +51,11 @@ Using RStudio, code was written to query and retrieve TCGA-BRCA RNA-Seq data for
 The data underwent normalization with the `TCGAanalyze_normalization()` function. This normalization was done to account for the differences in the length of each gene. The data was then filtered with the `TCGAanalyze_Filtering()` function. A quantile cut threshold of 0.25 was chosen to remove the genes whose expression levels were under the 25th percentile, as these genes could potentially contribute to noise. This filtration step was to ensure more robust downstream analysis.
 
 **Figures**:
+   ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage3_Pipeline_Implementation/visualizations/heatmap.jpg)
 - **Figure 1**: Heatmap of filtered dataset (Green: Low, Black: Intermediate, Red: High expression)
+   ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage3_Pipeline_Implementation/visualizations/Screenshot_20240925_205416_Docs.jpg)
 - **Figure 2**: Heatmap clustered by row
+  ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage3_Pipeline_Implementation/visualizations/Screenshot_20240925_205638_Docs.jpg)
 - **Figure 3**: Heatmap clustered by column
 
 ## 3. Methodology 
@@ -60,6 +63,7 @@ The data underwent normalization with the `TCGAanalyze_normalization()` function
 ### 3.1 Differential Expression Analysis
 EdgeR was the pipeline of choice for analysis of the differential expression of genes between the solid tissue normal (STN) and primary tumor (PT) samples in the filtered breast cancer (BRCA) gene expression dataset. The analysis was done with the `TCGAanalyze_DEA()` function. An FDR cut-off of 0.01 and a log2 fold change cut off 2 were chosen. The result of the analysis was a group of 3462 genes with `abs(log2Foldchange >= 2)` and `FDR <= 0.01`. 98 overregulated and 129 underregulated genes sets were then selected based on stringent log2Foldchange thresholds of `>= 6` and `<= -6` for the former and latter respectively.
 
+![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage3_Pipeline_Implementation/visualizations/volcano.jpg)
 **Figure 4**: Volcano plot showing downregulated and upregulated genes.
 
 ### 3.2 Machine Learning Preparation
@@ -96,7 +100,9 @@ The analysis revealed several significant biomarkers:
 | MYH   | -13.16      | 3.26E-102   | Part of the base repair pathway, detecting and protecting against oxidative DNA damage. Low expression leads to mutation and cancer.(10) |
 
 **Figures**:
+   ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage3_Pipeline_Implementation/visualizations/upreggenepathway_plot%20(1).png)
 - **Figure 5**: Upregulated genes enriched pathways.
+   ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage3_Pipeline_Implementation/visualizations/downreggenepathway_plot.png)
 - **Figure 6**: Downregulated genes enriched pathways.
 
 
@@ -108,10 +114,11 @@ The analysis revealed several significant biomarkers:
 | **Normal**           | 6      | 0     |
 | **Tumor**            | 0      | 6     |
 
+    ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage3_Pipeline_Implementation/visualizations/Confusion%20Matrix.png)
 - **Figure 7**: Confusion Matrix
 
 The Random Forest model achieved perfect classification with 100% accuracy, as indicated by the confusion matrix, with no misclassifications between "Normal" and "Tumor" samples. Key performance metrics include a 95% Confidence Interval of (0.7354, 1), a Kappa statistic of 1, and perfect sensitivity, specificity, precision, and negative predictive value, all at 1. The model’s performance is statistically significant, and cross-validation confirmed its robustness with a mean accuracy of 96.67%, ensuring generalizability.
-
+   ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage3_Pipeline_Implementation/visualizations/rf_model.png)
 - **Figure 8**: Random Forest model
 
 ## 5. Conclusion and Future Directions
@@ -127,8 +134,22 @@ suggesting these biomarkers may hold clinical value.
 
 ## 6. Reference
 
-1. Colaprico, A., Silva, T. C., Olsen, C., Garofano, L., Cava, C., Garolini, D., ... & Noushmehr, H. (2016). TCGAbiolinks: an R/Bioconductor package for integrative analysis of TCGA data. *Nucleic Acids Research*, 44(8).
+1. Colaprico, A., Silva, T. C., Olsen, C., Garofano, L., Cava, C., Garolini, D., ... & Noushmehr, H. (2016). TCGAbiolinks: an R/Bioconductor package for integrative analysis of TCGA data. *Nucleic acids research, 44*(8), e71-e71. [http://doi.org/10.1093/nar/gkv1507](http://doi.org/10.1093/nar/gkv1507).
 
 2. Wickham, H., François, R., Henry, L., Müller, K., & Vaughan, D. (2023). dplyr: a grammar of data manipulation. R package version 1.1.2. *Computer software*.
 
-3. Wickham, H., Averick, M., Bryan, J., Chang, W., McGowan, L. D. A., François, & Yutani, H. (2019). Welcome to the Tidyverse. *Journal of Open Source Software*, 4(43).
+3. Wickham, H., Averick, M., Bryan, J., Chang, W., McGowan, L. D. A., François, R., ... & Yutani, H. (2019). Welcome to the Tidyverse. *Journal of open source software, 4*(43), 1686. [doi:10.21105/joss.01686](https://doi.org/10.21105/joss.01686).
+
+4. Xiong, S., Wen, H., Dai, L., Lou, Y., Wang, Z., Yi, Y., Yan, X., ... & Wu, G. (2023). A brain-tumor neural circuit controls breast cancer progression in mice. *Journal of Clinical Investigation, 133*(24). [https://doi.org/10.1172/jci167725](https://doi.org/10.1172/jci167725).
+
+5. Zhou, J., Zhu, X., Wu, S., & Chen, Y. (2022). Glycoprotein hormone α‑subunit promotes cell proliferation and tumorigenesis in breast cancer. *Oncology Letters, 23*(5). [https://doi.org/10.3892/ol.2022.13263](https://doi.org/10.3892/ol.2022.13263).
+
+6. Wongpanuwich, W., Yodsanga, S., Chaisuparat, R., & Amornphimoltham, P. (2022). Association Between PD-L1 and Histatin1, 3 Expression in Advanced Head and Neck Squamous Cell Carcinoma. *Anticancer Research, 42*(5), 2689–2699. [https://doi.org/10.21873/anticanres.15747](https://doi.org/10.21873/anticanres.15747).
+
+7. Ni, J., Peng, Y., Yang, F., Xi, X., Huang, X., & He, C. (2018). Overexpression of CLEC3A promotes tumor progression and poor prognosis in breast invasive ductal cancer. *OncoTargets and Therapy, Volume 11*, 3303–3312. [https://doi.org/10.2147/ott.s161311](https://doi.org/10.2147/ott.s161311).
+
+8. Lv, M. (2023). MYL5 as a Novel Prognostic Marker is Associated with Immune Infiltrating in Breast Cancer: A Preliminary Study. *The Breast Journal, 2023*, 1–21. [https://doi.org/10.1155/2023/9508632](https://doi.org/10.1155/2023/9508632).
+
+9. Chen, H., Liu, M., Luo, Y., Zhao, L., Huang, L., Xiao, M., Qi, C., & Yang, Z. (2022). XIRP2 mutation as an indicator stratified patients benefit from immune checkpoint inhibitors in NSCLC. *Journal of Clinical Oncology, 40*(16_suppl), e14573. [https://doi.org/10.1200/jco.2022.40.16_suppl.e14573](https://doi.org/10.1200/jco.2022.40.16_suppl.e14573).
+
+10. Cleary, S. P., Cotterchio, M., Jenkins, M. A., Kim, H., Bristow, R., Green, R., ... & Gallinger, S. (2009). Germline MutY Human Homologue Mutations and Colorectal Cancer: A Multisite Case-Control Study. *Gastroenterology, 136*(4), 1251–1260. [https://doi.org/10.1053/j.gastro.2008.12.050](https://doi.org/10.1053/j.gastro.2008.12.050).
