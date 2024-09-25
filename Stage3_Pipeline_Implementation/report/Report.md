@@ -113,12 +113,12 @@ The analysis revealed several significant biomarkers:
 
 
    ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage3_Pipeline_Implementation/visualizations/Confusion%20Matrix.png)
-                    *Figure 7: Confusion Matrix*
+                   *Figure 7: Confusion Matrix*
 
 The Random Forest model achieved perfect classification with 100% accuracy, as indicated by the confusion matrix, with no misclassifications between "Normal" and "Tumor" samples. Key performance metrics include a 95% Confidence Interval of (0.7354, 1), a Kappa statistic of 1, and perfect sensitivity, specificity, precision, and negative predictive value, all at 1. The model’s performance is statistically significant, and cross-validation confirmed its robustness with a mean accuracy of 96.67%, ensuring generalizability.
 
    ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage3_Pipeline_Implementation/visualizations/rf_model.png)
-                  *Figure 8: Random Forest model*
+                 *Figure 8: Random Forest model*
 
 ## 5. Conclusion and Future Directions
 This study successfully identified potential biomarkers like CST5 and MYL in
