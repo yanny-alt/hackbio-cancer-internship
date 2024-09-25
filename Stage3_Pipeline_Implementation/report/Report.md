@@ -70,17 +70,15 @@ Component Analysis (PCA) to address the high-dimensional nature of the
 dataset. The Random Forest model trained with 500 trees showed high 
 performance on the test set.
 
-### 3.4 Model Performance 
-#### 3.4a Confusion Matrix
-| Prediction/Reference | Normal | Tumor |
-|----------------------|--------|-------|
-| **Normal**           | 6      | 0     |
-| **Tumor**            | 0      | 6     |
-
-## 3.3 Potential Biomarkers and Enrichment Analysis
+### 3.3 Potential Biomarkers and Enrichment Analysis
 This section performs a comprehensive analysis of gene expression data, focusing on identifying key upregulated and downregulated genes and performing enrichment analysis. The process begins by reading two CSV files, one containing upregulated genes and the other downregulated genes. The Ensembl IDs in these files are then converted to gene symbols using the `biomaRt` package. Afterward, the script identifies the top 5 genes for both upregulated and downregulated categories, saving these results into CSV files. Subsequently, the enrichment analysis is conducted using the `TCGAanalyze_EAcomplete` function. The resulting data is further processed to prepare for visualization by separating the enrichment results into distinct columns for GO terms, FDR values, and gene counts. The top 5 pathways for both upregulated and downregulated genes are selected based on their FDR values. To visualize the results, a lollipop plot is created for each set, where the circle size represents the number of genes involved, and the color intensity corresponds to the FDR. These plots are saved as PNG files, offering a clear graphical summary of the most biologically relevant pathways for both upregulated and downregulated genes.
 
-###  Top Upregulated Biomarkers
+## 4. Results and Interpretation
+
+### 4.1 Identified Biomarkers
+The analysis revealed several significant biomarkers:
+
+**Top Upregulated Biomarkers**
 
 | Gene  | Fold Change | P-Value     | Significance                                                                                             |
 |-------|-------------|-------------|---------------------------------------------------------------------------------------------------------|
@@ -89,7 +87,7 @@ This section performs a comprehensive analysis of gene expression data, focusing
 | HTN   | 9.66        | 1.65E-60    | Significantly higher in tumors than normal tissues.(6)                                                   |
 | CLEC3A| 9.39        | 2.40E-69    | Correlates with metastatic potential and poor prognosis in breast cancer.(7)                              |
 
-### 6.2 Top Downregulated Biomarkers
+**Top Downregulated Biomarkers**
 
 | Gene  | Fold Change | P-Value     | Significance                                                                                                      |
 |-------|-------------|-------------|------------------------------------------------------------------------------------------------------------------|
@@ -103,18 +101,35 @@ This section performs a comprehensive analysis of gene expression data, focusing
 - **Figure 6**: Downregulated genes enriched pathways.
 
 
-## 10. Model Performance
-### 10.1 Confusion Matrix
+### 4.2 Model Performance
+**Confusion Matrix**
+
 | Prediction/Reference | Normal | Tumor |
 |----------------------|--------|-------|
 | **Normal**           | 6      | 0     |
 | **Tumor**            | 0      | 6     |
 
-The model achieved:
-- **Accuracy**: 100%
-- **95% CI**: (0.7354, 1)
-- **Kappa**: 1
-- **Sensitivity & Specificity**: Both 1
+- **Figure 7**: Confusion Matrix
 
-## 11. Feature Importance Analysis
-Random Forest feature importance shows which features significantly impact the model's predictions.
+The Random Forest model achieved perfect classification with 100% accuracy, as indicated by the confusion matrix, with no misclassifications between "Normal" and "Tumor" samples. Key performance metrics include a 95% Confidence Interval of (0.7354, 1), a Kappa statistic of 1, and perfect sensitivity, specificity, precision, and negative predictive value, all at 1. The model’s performance is statistically significant, and cross-validation confirmed its robustness with a mean accuracy of 96.67%, ensuring generalizability.
+
+- **Figure 8**: Random Forest model
+
+## 5. Conclusion and Future Directions
+This study successfully identified potential biomarkers like CST5 and MYL in
+breast cancer using differential expression analysis and machine learning. 
+The Random Forest model demonstrated strong predictive performance, 
+suggesting these biomarkers may hold clinical value.
+
+**Future Directions:**
+- Validation of findings in larger cohorts.
+- Application of this methodology to other cancer subtypes.
+- Integration with clinical data to enhance predictive power.
+
+## 6. Reference
+
+1. Colaprico, A., Silva, T. C., Olsen, C., Garofano, L., Cava, C., Garolini, D., ... & Noushmehr, H. (2016). TCGAbiolinks: an R/Bioconductor package for integrative analysis of TCGA data. *Nucleic Acids Research*, 44(8).
+
+2. Wickham, H., François, R., Henry, L., Müller, K., & Vaughan, D. (2023). dplyr: a grammar of data manipulation. R package version 1.1.2. *Computer software*.
+
+3. Wickham, H., Averick, M., Bryan, J., Chang, W., McGowan, L. D. A., François, & Yutani, H. (2019). Welcome to the Tidyverse. *Journal of Open Source Software*, 4(43).
