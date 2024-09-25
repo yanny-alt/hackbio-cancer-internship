@@ -1,4 +1,4 @@
-# Stage 03 Task: HackBio Internship - Cancers
+# Stage 03 Task: HackBio Bioinformatics Internship - Cancer Oncology
 
 ## Title
 **Identifying Potential Biomarkers in Breast Cancer Using Differential Expression and Machine Learning Approaches**
