@@ -11,11 +11,7 @@
 ---
 
 # Abstract
-In this study, we aim to reproduce the unsupervised clustering of low-grade gliomas (n = 516 LGG) based on methylation levels to classify the six IDH statuses. 
-Leveraging machine learning techniques, specifically the K-Nearest Neighbors (KNN) algorithm, we attempted to replicate the clustering process, as outlined in the study “Unsupervised Clustering of Gliomas Identifies Six Methylation Groups and Four RNA Expression Groups Associated with IDH Status” by Ceccarelli et al. (2016). 
-The clustering was performed on expression data obtained from The Cancer Genome Atlas (TCGA), where the gliomas were pre-labeled based on IDH mutations. 
-Our results revealed that KNN alone did not provide sufficiently high classification accuracy for distinct clusters, but the analysis offered insights into potential factors impacting glioma classification and paved the way for future improvements using alternative techniques. 
-We also compared our results with the findings of the referenced paper, identifying both overlaps and discrepancies in the clustering performance.
+This study aims to reproduce the unsupervised clustering of low-grade gliomas (n = 516 LGG) based on expression levels to classify  IDH statuses. Utilizing machine learning, specifically the K-Nearest Neighbors (KNN) algorithm, we attempted to replicate the clustering from “Unsupervised Clustering of Gliomas Identifies Four RNA Expression Groups Associated with IDH Status” by Ceccarelli et al. (2016). Clustering was performed on expression data from The Cancer Genome Atlas (TCGA), where gliomas were pre-labeled by IDH mutations. Our results showed that KNN did not yield high classification accuracy, but provided insights into factors influencing glioma classification.
 
 ## 1. Introduction
 Gliomas are the most common type of primary brain tumors, arising from glial cells. They are notoriously difficult to treat due to their highly infiltrative nature, and they are commonly associated with poor prognoses (Chen et al., 2021). Mutations in the Isocitrate Dehydrogenase (IDH) genes, particularly IDH1 and IDH2, have been found to play a significant role in gliomagenesis, especially in low-grade gliomas (LGG) (Cohen et al., 2013). 
@@ -104,8 +100,6 @@ Furthermore, our analysis indicates that specific genes identified as upregulate
 
 ## 7. Conclusion
 In conclusion, our study aimed to classify gliomas based on gene expression data, specifically focusing on IDH status. While we achieved some insights into the gene expression profiles, the overall classification accuracy and clustering performance fell short of expectations when compared to the reference study by Ceccarelli et al. (2016). This suggests that our methodology, while valid, may require refinement and the incorporation of more advanced analytical techniques.
-
-Overall, the challenges encountered in this analysis highlight the need for ongoing research in the molecular characterization of gliomas. Our findings reiterate the importance of exploring the molecular landscape of gliomas to identify novel therapeutic targets and improve patient outcomes. Future studies should aim to integrate multiple data types and employ advanced computational methods to enhance classification and predictive capabilities.
 
 ## 8. References
 
