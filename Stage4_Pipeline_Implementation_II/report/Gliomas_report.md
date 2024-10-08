@@ -86,3 +86,23 @@ In conclusion, our study aimed to classify gliomas based on gene expression data
 
 Overall, the challenges encountered in this analysis highlight the need for ongoing research in the molecular characterization of gliomas. Our findings reiterate the importance of exploring the molecular landscape of gliomas to identify novel therapeutic targets and improve patient outcomes. Future studies should aim to integrate multiple data types and employ advanced computational methods to enhance classification and predictive capabilities.
 
+## 8. References
+
+1. Ceccarelli, M., Barthel, F. P., Malta, T. M., Sabedot, T. S., Salama, S. R., Murray, B. A., et al. (2016). "Molecular Profiling Reveals Biologically Discrete Subsets and Pathways of Progression in Diffuse Glioma." *Cell*, 164(3), 550-563.
+
+2. Chen, H., Luo, Y., Li, C., Zhan, W., Tan, Q., Xie, C., Sharma, A., Sharma, H. S., & Zhang, Z. (2021b). Multimodal imaging in the differential diagnosis of glioma recurrence from treatment-related effects: A protocol for systematic review and network meta-analysis. *Progress in Brain Research*, 377–383.
+
+3. Cohen, A. L., Holmen, S. L., & Colman, H. (2013b). IDH1 and IDH2 Mutations in Gliomas. *Current Neurology and Neuroscience Reports*, 13(5).
+
+4. Albrecht, S., Bayer, T. A., Kraus, J. A. & Pietsch, T. (1995). Transthyretin expression in medulloblastomas and medulloblastoma cell lines. *Neuropathology and Applied Neurobiology*, 21(5), 399-409.
+
+5. Kawasumi-Kita, A., Lee, S. W., Ohtsuka, D., Niimi, K., Asakura, Y., Kitajima, K., Sakane, Y., Tamura, K., Ochi, H., Suzuki, K. I. T. & Morishita, Y. (2024). hoxc12/c13 as key regulators for rebooting the developmental program in Xenopus limb regeneration. *Nature Communications*, 15(1), p. 3340.
+
+6. Martinelli, C., Gabriele, F., Manai, F., Ciccone, R., Novara, F., Sauta, E., Bellazzi, R., Patane, M., Moroni, I., Paterra, R. & Comincini, S. (2020). The search for molecular markers in a gene-orphan case study of a pediatric spinal cord pilocytic astrocytoma. *Cancer Genomics & Proteomics*, 17(2), 117-130.
+
+7. Nilsson, F., Storm, P., Sozzi, E., Hidalgo Gil, D., Birtele, M., Sharma, Y., Parmar, M. & Fiorenzano, A. (2021). Single-cell profiling of coding and noncoding genes in human dopamine neuron differentiation. *Cells*, 10(1), p. 137.
+
+8. Shinoda, T., Ito, H., Sudo, K., Iwamoto, I., Morishita, R. & Nagata, K. I. (2010). Septin 14 is involved in cortical neuronal migration via interaction with Septin 4. *Molecular Biology of the Cell*, 21(8), 1324-1334.
+
+9. Zhang, X., Wang, W., Zhu, W., Dong, J., Cheng, Y., Yin, Z. & Shen, F. (2019). Mechanisms and functions of long non-coding RNAs at multiple regulatory levels. *International Journal of Molecular Sciences*, 20(22), p. 5573.
+
