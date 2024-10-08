@@ -42,12 +42,15 @@ To evaluate the glioma dataset, both Random Forest and KNN models were employed:
 - Accuracy: 17.15%
 - Kappa: 0.0057
 - Balanced Accuracy by Class ranged from 49.95% to 50.65%.
- ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage4_Pipeline_Implementation_II/visualizations/Random%20Forest%20Confusion%20Matrix.png)
+
+   ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage4_Pipeline_Implementation_II/visualizations/Random%20Forest%20Confusion%20Matrix.png)
                         *Figure: Random Forest Confusion Matrix*
+   
 **KNN Model (k = 3):**
 - Accuracy: 17.32%
 - Kappa: 0.0078
 - Balanced Accuracy by Class ranged from 49.74% to 51.36%.
+  
    ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage4_Pipeline_Implementation_II/visualizations/KNN%20Confusion%20Matrix.png)
               *Figure: KNN Confusion Matrix*
 
