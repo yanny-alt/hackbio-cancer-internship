@@ -13,7 +13,7 @@
 # Abstract
 In this study, we aim to reproduce the unsupervised clustering of low-grade gliomas (n = 516 LGG) based on methylation levels to classify the six IDH statuses. 
 Leveraging machine learning techniques, specifically the K-Nearest Neighbors (KNN) algorithm, we attempted to replicate the clustering process, as outlined in the study “Unsupervised Clustering of Gliomas Identifies Six Methylation Groups and Four RNA Expression Groups Associated with IDH Status” by Ceccarelli et al. (2016). 
-The clustering was performed on methylation data obtained from The Cancer Genome Atlas (TCGA), where the gliomas were pre-labeled based on IDH mutations. 
+The clustering was performed on expression data obtained from The Cancer Genome Atlas (TCGA), where the gliomas were pre-labeled based on IDH mutations. 
 Our results revealed that KNN alone did not provide sufficiently high classification accuracy for distinct clusters, but the analysis offered insights into potential factors impacting glioma classification and paved the way for future improvements using alternative techniques. 
 We also compared our results with the findings of the referenced paper, identifying both overlaps and discrepancies in the clustering performance.
 
