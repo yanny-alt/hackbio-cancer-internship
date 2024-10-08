@@ -31,9 +31,21 @@ This analysis utilizes gene expression data from the TCGA Low-Grade Glioma proje
 ### 2.1 Data Cleaning and Normalization
 Data cleaning involved excluding samples without IDH status and factorizing the remaining samples into Wildtype and Mutant categories. The expression dataset was normalized using the 'TCGAanalyze_Normalization' function, which adjusted for gene length. Filtering was then applied to remove low-expression genes based on a 25th percentile cutoff. This ensured a high-quality dataset for differential expression analysis, enhancing the reliability of the results by minimizing noise.
 
+   ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage4_Pipeline_Implementation_II/visualizations/heatmap%20of%20LLG%20expresion%20data.png)
+                 *Figure: Heatmap of LLG expression data*
+
 ## 3. Methodology
 ### 3.1 Differential Expression Analysis
 Differential expression analysis was conducted to compare IDH Wildtype and Mutant samples using a log-fold change cutoff of 2.5 and a false discovery rate of 0.01, resulting in identification of underregulated and overregulated genes in gliomas.
+
+  ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage4_Pipeline_Implementation_II/visualizations/MA%20plot%203%20For%20DEA%20results.png)
+             *Figure: MA plot For Differential Expression Analysis*
+
+  ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage4_Pipeline_Implementation_II/visualizations/Density%20Plot%203.png)
+               *Figure: Density Plot*
+
+  ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage4_Pipeline_Implementation_II/visualizations/LGG%20Volcano%20Plot3.png)
+               *Figure: Volcano Plot For LGG Dataset*
 
 ### 3.2 Random Forest and KNN Classification
 To evaluate the glioma dataset, both Random Forest and KNN models were employed:
@@ -42,15 +54,16 @@ To evaluate the glioma dataset, both Random Forest and KNN models were employed:
 - Accuracy: 17.15%
 - Kappa: 0.0057
 - Balanced Accuracy by Class ranged from 49.95% to 50.65%.
-
-   ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage4_Pipeline_Implementation_II/visualizations/Random%20Forest%20Confusion%20Matrix.png)
-                        *Figure: Random Forest Confusion Matrix*
    
 **KNN Model (k = 3):**
 - Accuracy: 17.32%
 - Kappa: 0.0078
 - Balanced Accuracy by Class ranged from 49.74% to 51.36%.
-  
+
+
+   ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage4_Pipeline_Implementation_II/visualizations/Random%20Forest%20Confusion%20Matrix.png)
+                        *Figure: Random Forest Confusion Matrix*
+
    ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage4_Pipeline_Implementation_II/visualizations/KNN%20Confusion%20Matrix.png)
               *Figure: KNN Confusion Matrix*
 
@@ -71,11 +84,11 @@ EA was carried out with the `TCGAanalyze_EAComplete()` function provided by the 
 - **Overexpressed Genes:** GPCR signaling pathway, sensory perception, and neurological system processes.
 - **Underexpressed Genes:** Pattern specification process, anterior/posterior pattern formation, and regionalization.
 
-### Figure 1
-Lollipop plot of the top pathways enriched with downregulated/underexpressed genes.
+ ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage4_Pipeline_Implementation_II/visualizations/downreggenepathway_plot%20(1).png)
+          *Figure: Lollipop plot of the top pathways enriched with downregulated/underexpressed genes*
 
-### Figure 2
-Lollipop plot of the top pathways enriched with upregulated/overexpressed genes.
+ ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage4_Pipeline_Implementation_II/visualizations/upreggenepathway_plot%20(2).png)
+          *Figure : Lollipop plot of the top pathways enriched with upregulated/overexpressed genes*
 
 Top-ranked upregulated genes include the protein-coding gene DEFB119, which plays a role in cell/tissue defense (Martinelli et al., 2020), and long non-coding (lnc) RNA genes LINC01602, LINC03018, which may be involved in transcriptional control (Zhang et al., 2019). The top-ranked downregulated genes include TTR (transthyretin), which is often not expressed in gliomas (Albrecht et al., 1995), and HOXC12, involved in morphological processes (Kawasumi-Kita et al., 2024).
 
