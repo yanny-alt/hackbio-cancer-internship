@@ -60,7 +60,7 @@ Both models had low overall accuracies and kappas, suggesting significant challe
 To further explore the structure within the glioma dataset, we applied K-means clustering with six centers. The silhouette score, which measures how well each point lies within its assigned cluster, was 0.81, indicating that the clustering generally formed well-defined groups. This was confirmed by evaluating the confusion matrices of the models and comparing the clusters to the known classes. Both Random Forest and KNN models exhibited similar misclassification patterns, with sensitivity and specificity values that suggested the difficulty in clearly distinguishing between IDH Wildtype and Mutant gliomas.
 
  ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage4_Pipeline_Implementation_II/visualizations/t-SNE%20Plot%20of%20Clustering%20Results.png)
-            **Figure: t-SNE Plot of Clustering Results*
+            *Figure: t-SNE Plot of Clustering Results*
 
 ## 4. Enrichment Analysis (EA)
 EA was carried out with the `TCGAanalyze_EAComplete()` function provided by the TCGAbiolinks package in RStudio. EA revealed significantly enriched biological processes in lists of overexpressed and underexpressed genes. Notable enriched biological processes include:
