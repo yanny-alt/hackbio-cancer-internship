@@ -5,9 +5,8 @@
 - Favour Igwezeke<sup>1</sup>
 - Jessica Ovabor<sup>2</sup>
 - Oluwatobiloba Johnson Osedimilehin<sup>3</sup>
-- Ogochukwu Nwaigwe<sup>4</sup>
-- Muhammad Faizan Khan<sup>5</sup>
-- Rokaya Yasser<sup>7</sup>
+- Muhammad Faizan Khan<sup>4</sup>
+- Rokaya Yasser<sup>5</sup>
 
 ---
 
