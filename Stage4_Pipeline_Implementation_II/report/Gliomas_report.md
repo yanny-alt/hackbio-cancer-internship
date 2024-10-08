@@ -53,7 +53,7 @@ Both models had low overall accuracies and kappas, suggesting significant challe
 ### 3.3 Clustering Analysis
 To further explore the structure within the glioma dataset, we applied K-means clustering with six centers. The silhouette score, which measures how well each point lies within its assigned cluster, was 0.81, indicating that the clustering generally formed well-defined groups. This was confirmed by evaluating the confusion matrices of the models and comparing the clusters to the known classes. Both Random Forest and KNN models exhibited similar misclassification patterns, with sensitivity and specificity values that suggested the difficulty in clearly distinguishing between IDH Wildtype and Mutant gliomas.
 
-## 4.0 Enrichment Analysis (EA)
+## 4. Enrichment Analysis (EA)
 EA was carried out with the `TCGAanalyze_EAComplete()` function provided by the TCGAbiolinks package in RStudio. EA revealed significantly enriched biological processes in lists of overexpressed and underexpressed genes. Notable enriched biological processes include:
 
 - **Overexpressed Genes:** GPCR signaling pathway, sensory perception, and neurological system processes.
@@ -66,3 +66,23 @@ Lollipop plot of the top pathways enriched with downregulated/underexpressed gen
 Lollipop plot of the top pathways enriched with upregulated/overexpressed genes.
 
 Top-ranked upregulated genes include the protein-coding gene DEFB119, which plays a role in cell/tissue defense (Martinelli et al., 2020), and long non-coding (lnc) RNA genes LINC01602, LINC03018, which may be involved in transcriptional control (Zhang et al., 2019). The top-ranked downregulated genes include TTR (transthyretin), which is often not expressed in gliomas (Albrecht et al., 1995), and HOXC12, involved in morphological processes (Kawasumi-Kita et al., 2024).
+
+## 5. Comparison with the Reference Paper
+The study by Ceccarelli et al. (2016) identified six distinct methylation groups and four RNA expression groups associated with IDH status using unsupervised clustering techniques. Our analysis, while following a similar methodology, did not achieve comparable levels of classification accuracy or clustering performance. Specifically:
+
+- **Cluster Definitions:** Ceccarelli et al. achieved clearer separation between IDH mutant and wildtype gliomas. Our results suggest that the methylation-based features used in our analysis may not be as discriminative as those employed in the original study.
+- **Dataset Quality:** The low accuracy in our models might be due to the quality and preprocessing of the data, as well as the differences in the clustering algorithms used.
+- **Future Directions:** Additional steps, such as using deeper neural networks or incorporating more advanced feature selection techniques, may be necessary to improve clustering accuracy.
+
+## 6. Discussion
+Our study highlights the significant challenges in classifying gliomas into distinct subtypes based solely on gene expression and methylation levels. Although the KNN and Random Forest models provided some insights into the clustering structure of the glioma dataset, the results indicate that more sophisticated algorithms may be required to achieve the desired classification performance.
+
+The comparison with Ceccarelli et al. (2016) reveals important discrepancies in clustering performance, yet both studies observe consistent clustering trends. Our findings underscore the necessity for further research into the molecular subtypes of gliomas. Specifically, optimizing clustering algorithms and exploring additional biological variables will be crucial for better differentiation between IDH statuses.
+
+Furthermore, our analysis indicates that specific genes identified as upregulated or downregulated may serve as potential therapeutic targets. However, the complexity of glioma biology requires an integrative approach that combines gene expression data with other genomic, epigenomic, and clinical parameters. This comprehensive strategy will enhance our understanding of glioma subtypes and inform future therapeutic interventions.
+
+## 7. Conclusion
+In conclusion, our study aimed to classify gliomas based on gene expression data, specifically focusing on IDH status. While we achieved some insights into the gene expression profiles, the overall classification accuracy and clustering performance fell short of expectations when compared to the reference study by Ceccarelli et al. (2016). This suggests that our methodology, while valid, may require refinement and the incorporation of more advanced analytical techniques.
+
+Overall, the challenges encountered in this analysis highlight the need for ongoing research in the molecular characterization of gliomas. Our findings reiterate the importance of exploring the molecular landscape of gliomas to identify novel therapeutic targets and improve patient outcomes. Future studies should aim to integrate multiple data types and employ advanced computational methods to enhance classification and predictive capabilities.
+
