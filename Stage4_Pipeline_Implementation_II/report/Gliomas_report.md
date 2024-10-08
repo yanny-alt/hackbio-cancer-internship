@@ -21,9 +21,6 @@ We also compared our results with the findings of the referenced paper, identify
 Gliomas are the most common type of primary brain tumors, arising from glial cells. They are notoriously difficult to treat due to their highly infiltrative nature, and they are commonly associated with poor prognoses (Chen et al., 2021). Mutations in the Isocitrate Dehydrogenase (IDH) genes, particularly IDH1 and IDH2, have been found to play a significant role in gliomagenesis, especially in low-grade gliomas (LGG) (Cohen et al., 2013). 
 These mutations are early events in tumor development and serve as important biomarkers for diagnosis, prognosis, and treatment strategies.These mutations often coexist with specific genetic alterations, such as TP53 mutations in astrocytic tumors and 1p/19q co-deletions in oligodendrogliomas (Cohen et al.). The presence of IDH mutations plays a critical role in treatment strategies and prognostic evaluations for low-grade gliomas, emphasizing their significance in tumorigenesis (Chen et al.).
 
-Recent studies have demonstrated that molecular profiling of gliomas based on methylation and RNA expression data can help classify gliomas into distinct subtypes, with significant prognostic implications (Ceccarelli et al., 2016). 
-This study aims to reproduce the unsupervised clustering methodology used to identify six methylation-based groups and four RNA expression-based groups, associated with IDH statuses.
-
 ## 2. Dataset and Preprocessing
 This analysis utilizes gene expression data from the TCGA Low-Grade Glioma project (TCGA-LGG). After querying and downloading the transcriptome profiling data, raw count data was extracted for further analysis. Sample IDs were obtained, and IDH status was determined using subtype data.
 
