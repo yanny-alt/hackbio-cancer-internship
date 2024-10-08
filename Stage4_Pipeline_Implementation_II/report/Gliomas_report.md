@@ -42,16 +42,25 @@ To evaluate the glioma dataset, both Random Forest and KNN models were employed:
 - Accuracy: 17.15%
 - Kappa: 0.0057
 - Balanced Accuracy by Class ranged from 49.95% to 50.65%.
-
+ ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage4_Pipeline_Implementation_II/visualizations/Random%20Forest%20Confusion%20Matrix.png)
+                        *Figure: Random Forest Confusion Matrix*
 **KNN Model (k = 3):**
 - Accuracy: 17.32%
 - Kappa: 0.0078
 - Balanced Accuracy by Class ranged from 49.74% to 51.36%.
+   ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage4_Pipeline_Implementation_II/visualizations/KNN%20Confusion%20Matrix.png)
+              *Figure: KNN Confusion Matrix*
+
+  ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage4_Pipeline_Implementation_II/visualizations/Variable%20Importace.png)
+              *Figure: Variable Importace Plot*
 
 Both models had low overall accuracies and kappas, suggesting significant challenges in predicting glioma clusters based on gene expression data alone, possibly due to high inter-cluster similarity and insufficient discriminatory features.
 
 ### 3.3 Clustering Analysis
 To further explore the structure within the glioma dataset, we applied K-means clustering with six centers. The silhouette score, which measures how well each point lies within its assigned cluster, was 0.81, indicating that the clustering generally formed well-defined groups. This was confirmed by evaluating the confusion matrices of the models and comparing the clusters to the known classes. Both Random Forest and KNN models exhibited similar misclassification patterns, with sensitivity and specificity values that suggested the difficulty in clearly distinguishing between IDH Wildtype and Mutant gliomas.
+
+ ![](https://github.com/yanny-alt/hackbio-cancer-internship/blob/main/Stage4_Pipeline_Implementation_II/visualizations/t-SNE%20Plot%20of%20Clustering%20Results.png)
+            **Figure: t-SNE Plot of Clustering Results*
 
 ## 4. Enrichment Analysis (EA)
 EA was carried out with the `TCGAanalyze_EAComplete()` function provided by the TCGAbiolinks package in RStudio. EA revealed significantly enriched biological processes in lists of overexpressed and underexpressed genes. Notable enriched biological processes include:
