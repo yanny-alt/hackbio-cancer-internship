@@ -3,7 +3,7 @@
 ## HackBio BioInformatics Internship: Clinical Oncology
 
 ### Title
-**Gene Expression Analysis and Functional Enrichment of Differentially Expressed Genes**
+**Gene Expression Analysis and Functional Enrichment of Differentially Expressed Genes in Glioblastoma**
 
 ### Authors
 Favour Igwezeke<sup>1</sup>, Jessica Ovabor<sup>2</sup>, Anarghya Hegde<sup>3</sup>, Oluwatobiloba Johnson Osedimilehin<sup>4</sup>, Ogochukwu Nwaigwe<sup>5</sup>, Muhammad Faheem Raziq<sup>6</sup>
