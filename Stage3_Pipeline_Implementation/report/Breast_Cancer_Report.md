@@ -1,7 +1,7 @@
 # Stage 03 Task: HackBio Bioinformatics Internship - Clinical Oncology
 
 ## Title
-**Integrative Bioinformatics and Machine Learning Approaches to Uncover Novel Biomarkers for Breast Cancer: A TCGA-BRCA Differential Gene Expression Analysis*
+**Integrative Bioinformatics and Machine Learning Approaches to Uncover Novel Biomarkers for Breast Cancer: A TCGA-BRCA Differential Gene Expression Analysis**
 
 ### Authors
 - Favour Igwezeke<sup>1</sup>
