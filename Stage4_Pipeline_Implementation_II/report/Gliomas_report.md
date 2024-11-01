@@ -1,5 +1,5 @@
 ## Title
-**Unsupervised Clustering of Gliomas Using Methylation and RNA Expression Levels to Classify IDH Status**
+**Characterizing Low-Grade Gliomas: An Unsupervised Learning Framework for IDH Status Classification Using Methylation and Expression Data**
 
 ### Authors
 - Favour Igwezeke<sup>1</sup>
