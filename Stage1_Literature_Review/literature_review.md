@@ -1,4 +1,4 @@
-**Large-scale RNA-Seq Transcriptome Analysis of 4043 Cancers and 548 Normal Tissue Controls across 12 TCGA Cancer Types**
+**Advancements in Cancer Genomics: Transcriptomic Profiling and Predictive Biomarkers Through Large-Scale RNA-Seq Data**
 
 Muhammad Faheem Raziq, Favour Igwezeke, Josiah Isong, Nnadiekwe Chigozie
 
