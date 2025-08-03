@@ -1,5 +1,5 @@
 ## Title
-**Characterizing Low-Grade Gliomas: An Unsupervised Learning Framework for IDH Status Classification Using Methylation and Expression Data**
+**Characterizing Low-Grade Gliomas: An Unsupervised Learning Framework for IDH Status Classification Using Expression Data**
 
 ### Authors
 - Favour Igwezeke<sup>1</sup>
@@ -11,7 +11,7 @@
 ---
 
 # Abstract
-This study aims to reproduce the unsupervised clustering of low-grade gliomas (n = 516 LGG) to develop a diagnostic framework for IDH status classification using methylation and expression data. Utilizing machine learning, specifically the K-Nearest Neighbors (KNN) algorithm, we attempted to replicate the clustering from “Unsupervised Clustering of Gliomas Identifies Four RNA Expression Groups Associated with IDH Status” by Ceccarelli et al. (2016). This work demonstrates the viability of unsupervised learning in digital healthcare for brain tumor subtyping. Clustering was performed on expression data from The Cancer Genome Atlas (TCGA), where gliomas were pre-labeled by IDH mutations. Despite modest accuracy, our ML framework reveals critical biomarker interactions with implications for glioma diagnostics and personalized treatment strategies.
+This study aims to reproduce the unsupervised clustering of low-grade gliomas (n = 516 LGG) to develop a diagnostic framework for IDH status classification using expression data. Utilizing machine learning, specifically the K-Nearest Neighbors (KNN) algorithm, we attempted to replicate the clustering from “Unsupervised Clustering of Gliomas Identifies Four RNA Expression Groups Associated with IDH Status” by Ceccarelli et al. (2016). This work demonstrates the viability of unsupervised learning in digital healthcare for brain tumor subtyping. Clustering was performed on expression data from The Cancer Genome Atlas (TCGA), where gliomas were pre-labeled by IDH mutations. Despite modest accuracy, our ML framework reveals critical biomarker interactions with implications for glioma diagnostics and personalized treatment strategies.
 
 ## 1. Introduction
 Gliomas are the most common type of primary brain tumors, arising from glial cells. They are notoriously difficult to treat due to their highly infiltrative nature, and they are commonly associated with poor prognoses (Chen et al., 2021). Mutations in the Isocitrate Dehydrogenase (IDH) genes, particularly IDH1 and IDH2, have been found to play a significant role in gliomagenesis, especially in low-grade gliomas (LGG) (Cohen et al., 2013). 
